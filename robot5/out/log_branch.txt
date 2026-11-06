@@ -1,0 +1,282 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[   152s] 'open a drawer' init 3 seed 0, t   0: {'bottom drawer open': 1, 'bowl->top drawer': 7, 'middle drawer': 8} | z decides in 2/2 streams | FTLE exec -0.62 (max -0.60), full +1.41
+[   246s] 'open a drawer' init 3 seed 0, t  10: {'middle drawer': 3, 'bowl->top drawer': 13} | z decides in 2/2 streams | FTLE exec -1.49 (max -1.46), full +1.53
+[   312s] 'open a drawer' init 3 seed 0, t  20: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.68 (max -0.55), full +2.36
+[   375s] 'open a drawer' init 3 seed 0, t  30: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.75 (max -0.46), full +2.29
+[   436s] 'open a drawer' init 3 seed 0, t  40: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.92 (max -0.90), full +1.13
+[   494s] 'open a drawer' init 3 seed 0, t  50: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -1.46 (max -1.41), full +1.49
+[   550s] 'open a drawer' init 3 seed 0, t  60: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.99 (max -0.92), full +1.82
+[   603s] 'open a drawer' init 3 seed 0, t  70: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.95 (max -0.91), full +1.85
+[   652s] 'open a drawer' init 3 seed 0, t  80: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.79 (max -0.66), full +1.90
+[   699s] 'open a drawer' init 3 seed 0, t  90: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec +0.28 (max +0.42), full +1.41
+[   742s] 'open a drawer' init 3 seed 0, t 100: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -1.08 (max -0.86), full +1.15
+[   783s] 'open a drawer' init 3 seed 0, t 110: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -1.58 (max -1.56), full +1.21
+[   821s] 'open a drawer' init 3 seed 0, t 120: {'middle drawer': 16} | z decides in 0/2 streams | FTLE exec -0.62 (max -0.52), full +1.20
+[   821s] main rollout: middle drawer at t 124
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[   117s] 'move the bowl' init 3 seed 0, t   0: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -0.59 (max -0.52), full +0.66
+[   173s] 'move the bowl' init 3 seed 0, t  10: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -1.12 (max -1.08), full +0.36
+[   226s] 'move the bowl' init 3 seed 0, t  20: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -1.58 (max -1.50), full +0.36
+[   276s] 'move the bowl' init 3 seed 0, t  30: {'bowl->plate': 14, 'bowl->stove': 2} | z decides in 2/2 streams | FTLE exec -1.02 (max -0.32), full +0.75
+[   323s] 'move the bowl' init 3 seed 0, t  40: {'bowl->plate': 14, 'bowl->stove': 2} | z decides in 2/2 streams | FTLE exec -1.09 (max -1.03), full +1.96
+[   367s] 'move the bowl' init 3 seed 0, t  50: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -0.62 (max -0.54), full +1.11
+[   408s] 'move the bowl' init 3 seed 0, t  60: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -0.85 (max -0.81), full +0.48
+[   446s] 'move the bowl' init 3 seed 0, t  70: {'bowl->plate': 16} | z decides in 0/2 streams | FTLE exec -1.50 (max -1.46), full +0.36
+[   446s] main rollout: bowl->plate at t 79
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[   125s] 'tidy up the table' init 2 seed 0, t   0: {'bowl->stove': 7, 'bowl->plate': 9} | z decides in 2/2 streams | FTLE exec +0.09 (max +0.25), full +2.10
+[   186s] 'tidy up the table' init 2 seed 0, t  10: {'bowl->stove': 8, 'bowl->plate': 8} | z decides in 2/2 streams | FTLE exec -1.17 (max -1.17), full +0.60
+[   242s] 'tidy up the table' init 2 seed 0, t  20: {'bowl->stove': 5, 'bowl->plate': 11} | z decides in 2/2 streams | FTLE exec -1.25 (max -1.17), full +0.38
+[   300s] 'tidy up the table' init 2 seed 0, t  30: {'bowl->stove': 13, 'bowl->plate': 3} | z decides in 2/2 streams | FTLE exec -1.23 (max +4.14), full +1.02
+[   360s] 'tidy up the table' init 2 seed 0, t  40: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -1.51 (max -1.38), full +1.49
+[   419s] 'tidy up the table' init 2 seed 0, t  50: {'bowl->stove': 14, 'bowl->plate': 2} | z decides in 2/2 streams | FTLE exec -0.61 (max -0.47), full +1.34
+[   477s] 'tidy up the table' init 2 seed 0, t  60: {'bowl->stove': 14, 'bowl->plate': 2} | z decides in 2/2 streams | FTLE exec +0.08 (max +1.59), full +1.20
+[   529s] 'tidy up the table' init 2 seed 0, t  70: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -0.07 (max +0.03), full +1.21
+[   576s] 'tidy up the table' init 2 seed 0, t  80: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -0.65 (max -0.56), full +1.34
+[   620s] 'tidy up the table' init 2 seed 0, t  90: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -0.82 (max -0.80), full +0.68
+[   662s] 'tidy up the table' init 2 seed 0, t 100: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -1.39 (max -1.35), full +0.56
+[   700s] 'tidy up the table' init 2 seed 0, t 110: {'bowl->stove': 16} | z decides in 0/2 streams | FTLE exec -1.32 (max +0.45), full +1.09
+[   700s] main rollout: bowl->stove at t 120
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets

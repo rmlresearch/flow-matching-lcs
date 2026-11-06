@@ -15,3 +15,11 @@ robot3/logs/
 robot4/policies/
 robot4/assets/
 robot4/logs/
+robot5/logs/
+robot6/logs/
+
+# pi0.5 (robot5/): open-loop prompt screen, 22 MB, rebuild with `python goal5.py screen`
+robot5/out/goal_screen.npz
+
+# PushT (robot6/): migrated SmolVLA checkpoint (935 MB; see robot6/README.md)
+robot6/policies/

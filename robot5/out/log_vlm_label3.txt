@@ -1,0 +1,251 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+t 56 ground0: plus -> plate  (ray, truth plate) OK   minus -> ?      (none, truth stove) X   held: []
+t 56 ground1: plus -> plate  (ray, truth plate) OK   minus -> stove  (inside, truth stove) OK   held: ['bowl']
+t 50 ground0: plus -> ?      (none, truth stove) X   minus -> plate  (ray, truth plate) OK   held: []
+t 50 ground1: plus -> stove  (inside, truth stove) OK   minus -> plate  (ray, truth plate) OK   held: ['bowl']
+t 60 ground0: plus -> plate  (ray, truth plate) OK   minus -> stove  (inside, truth stove) OK   held: []
+t 60 ground1: plus -> plate  (ray, truth plate) OK   minus -> stove  (inside, truth stove) OK   held: ['bowl']
+10/12 correct
+Warning: make sure gym is installed if you want to use the GymWrapper.
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 45109.57it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+=== move the bowl|3|0|40: outcome + plate  - stove   | chunk (3-D) + plate  - cabinet
+  [objects] 3.1s labels ['stove', 'bottle', 'cabinet', 'plate', 'bowl', 'box']
+      raw  + plate          (ray    ) outcome OK chunk OK   - cabinet        (inside ) outcome X chunk OK
+      flat + plate          (inside ) outcome OK chunk OK   - cabinet        (ray    ) outcome X chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'box', 'plate', 'bowl', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (37     ) outcome OK chunk OK   - top drawer     (ray    ) outcome X chunk X
+      flat + plate          (33     ) outcome OK chunk OK   - bottom drawer  (84     ) outcome X chunk X
+  [arrows] 0.3s + plate OK   - chopping board X
+
+=== move the bowl|3|0|50: outcome + stove  - plate   | chunk (3-D) + stove  - plate
+  [objects] 2.1s labels ['stove', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + stove          (inside ) outcome OK chunk OK   - plate          (ray    ) outcome OK chunk OK
+      flat + stove          (inside ) outcome OK chunk OK   - plate          (inside ) outcome OK chunk OK
+  [objects+drawers] 3.5s labels ['plate', 'bowl', 'stove', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (inside ) outcome OK chunk OK   - plate          (ray    ) outcome OK chunk OK
+      flat + stove          (inside ) outcome OK chunk OK   - plate          (inside ) outcome OK chunk OK
+  [arrows] 0.2s + plate X   - plate OK
+
+=== move the bowl|3|1|40: outcome + plate  - plate  (same)   | chunk (3-D) + plate  - plate
+  [objects] 2.1s labels ['stove', 'bottle', 'plate', 'cabinet', 'box']
+      raw  + plate          (ray    ) outcome OK chunk OK   - cabinet        (ray    ) outcome X chunk X
+      flat + plate          (inside ) outcome OK chunk OK   - cabinet        (ray    ) outcome X chunk X
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'box', 'plate', 'bowl', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (31     ) outcome OK chunk OK   - top drawer     (ray    ) outcome X chunk X
+      flat + plate          (30     ) outcome OK chunk OK   - bottom drawer  (78     ) outcome X chunk X
+  [arrows] 0.3s + plate OK   - bottle X
+
+=== tidy up the table|2|0|0: outcome + stove  - stove on   | chunk (3-D) + bottle  - stove
+  [objects] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'cabinet', 'box']
+      raw  + bowl           (ray    ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+      flat + bowl           (inside ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+      flat + bowl           (37     ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+  [arrows] 0.3s + bottle X   - stove OK
+
+=== tidy up the table|2|0|40: outcome + plate  - plate  (same)   | chunk (3-D) + plate  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'bowl', 'box', 'cabinet', 'plate']
+      raw  + cabinet        (ray    ) outcome X chunk X   - plate          (ray    ) outcome OK chunk OK
+      flat + plate          (inside ) outcome OK chunk OK   - plate          (inside ) outcome OK chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'box', 'plate', 'bowl', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + top drawer     (ray    ) outcome X chunk X   - plate          (ray    ) outcome OK chunk OK
+      flat + bottom drawer  (129    ) outcome X chunk X   - plate          (ray    ) outcome OK chunk OK
+  [arrows] 0.3s + plate OK   - bottle X
+
+=== tidy up the table|2|0|50: outcome + stove  - plate   | chunk (3-D) + cheese  - plate
+  [objects] 2.6s labels ['bowl', 'stove', 'bottle', 'cabinet', 'box', 'plate']
+      raw  + stove          (inside ) outcome OK chunk X   - plate          (ray    ) outcome OK chunk OK
+      flat + stove          (inside ) outcome OK chunk X   - plate          (inside ) outcome OK chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bowl', 'bottle', 'box', 'plate', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (inside ) outcome OK chunk X   - bowl           (ray    ) outcome X chunk X
+      flat + stove          (75     ) outcome OK chunk X   - plate          (37     ) outcome OK chunk OK
+  [arrows] 0.3s + plate X   - bottle X
+
+=== tidy up the table|2|1|0: outcome + stove  - stove on   | chunk (3-D) + bottle  - stove
+  [objects] 2.6s labels ['stove', 'bottle', 'bowl', 'plate', 'cabinet', 'box']
+      raw  + bowl           (ray    ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+      flat + bowl           (inside ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+      flat + bowl           (37     ) outcome X chunk X   - stove          (inside ) outcome OK chunk OK
+  [arrows] 0.3s + bottle X   - stove OK
+
+=== tidy up the table|2|1|10: outcome + stove  - plate   | chunk (3-D) + bowl  - bottle
+  [objects] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'cabinet', 'box']
+      raw  + bowl           (ray    ) outcome X chunk OK   - bottle         (inside ) outcome X chunk OK
+      flat + box            (ray    ) outcome X chunk X   - cabinet        (ray    ) outcome X chunk X
+  [objects+drawers] 2.6s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + bowl           (43     ) outcome X chunk OK   - bottle         (inside ) outcome X chunk OK
+      flat + box            (59     ) outcome X chunk X   - bottom drawer  (73     ) outcome X chunk X
+  [arrows] 0.3s + bowl X   - bottle X
+
+=== tidy up the table|2|1|40: outcome + stove  - stove  (same)   | chunk (3-D) + plate  - plate
+  [objects] 2.2s labels ['stove', 'bottle', 'cabinet', 'plate', 'box']
+      raw  + cabinet        (ray    ) outcome X chunk X   - plate          (ray    ) outcome X chunk OK
+      flat + cabinet        (ray    ) outcome X chunk X   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.6s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + middle drawer  (ray    ) outcome X chunk X   - plate          (ray    ) outcome X chunk OK
+      flat + bottom drawer  (119    ) outcome X chunk X   - plate          (inside ) outcome X chunk OK
+  [arrows] 0.3s + drawer X   - plate X
+
+=== put the cream cheese on the stove|2|0|30: outcome + stove  - bowl   | chunk (3-D) + cheese  - bowl
+  [objects] 2.1s labels ['plate', 'bowl', 'bottle', 'cabinet', 'box']
+      raw  + ?              (none   ) outcome X chunk X   - bowl           (inside ) outcome OK chunk OK
+      flat + ?              (none   ) outcome X chunk X   - bowl           (inside ) outcome OK chunk OK
+  [objects+drawers] 2.3s labels ['plate', 'bowl', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + ?              (none   ) outcome X chunk X   - bottom drawer  (48     ) outcome X chunk X
+      flat + ?              (none   ) outcome X chunk X   - middle drawer  (ray    ) outcome X chunk X
+  [arrows] 0.3s + bottle X   - bowl OK
+
+=== put the cream cheese on the stove|2|0|50: outcome + stove  - bowl   | chunk (3-D) + stove  - bowl
+  [objects] 2.6s labels ['plate', 'bowl', 'stove', 'bottle', 'cabinet', 'box']
+      raw  + stove          (inside ) outcome OK chunk OK   - bottle         (ray    ) outcome X chunk X
+      flat + stove          (ray    ) outcome OK chunk OK   - bowl           (inside ) outcome OK chunk OK
+  [objects+drawers] 2.5s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (inside ) outcome OK chunk OK   - bottle         (ray    ) outcome X chunk X
+      flat + stove          (85     ) outcome OK chunk OK   - bowl           (ray    ) outcome OK chunk OK
+  [arrows] 0.3s + plate X   - bottle X
+
+=== put the cream cheese on the stove|2|0|70: outcome + bowl  - stove   | chunk (3-D) + bowl  - bowl
+  [objects] 2.2s labels ['stove', 'bowl', 'plate', 'cabinet', 'box']
+      raw  + bowl           (ray    ) outcome OK chunk OK   - stove          (inside ) outcome OK chunk X
+      flat + bowl           (inside ) outcome OK chunk OK   - stove          (ray    ) outcome OK chunk X
+  [objects+drawers] 1.9s labels ['stove', 'bowl', 'plate', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + bowl           (ray    ) outcome OK chunk OK   - stove          (ray    ) outcome OK chunk X
+      flat + bowl           (ray    ) outcome OK chunk OK   - stove          (97     ) outcome OK chunk X
+  [arrows] 0.3s + bowl OK   - plate X
+
+=== put the cream cheese on the stove|2|1|30: outcome + bowl  - bowl  (same)   | chunk (3-D) + cheese  - bowl
+  [objects] 2.1s labels ['plate', 'bowl', 'bottle', 'cabinet', 'box']
+      raw  + ?              (none   ) outcome X chunk X   - bowl           (inside ) outcome OK chunk OK
+      flat + ?              (none   ) outcome X chunk X   - bowl           (inside ) outcome OK chunk OK
+  [objects+drawers] 2.2s labels ['plate', 'bowl', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + ?              (none   ) outcome X chunk X   - bottom drawer  (60     ) outcome X chunk X
+      flat + ?              (none   ) outcome X chunk X   - bowl           (36     ) outcome OK chunk OK
+  [arrows] 0.3s + bottle X   - bowl OK
+
+=== put the cream cheese on the stove|2|1|50: outcome + bowl  - bowl  (same)   | chunk (3-D) + stove  - bowl
+  [objects] 2.9s labels ['plate', 'bowl', 'stove', 'bottle', 'cabinet', 'box', 'box']
+      raw  + stove          (inside ) outcome X chunk OK   - bottle         (ray    ) outcome X chunk X
+      flat + stove          (ray    ) outcome X chunk OK   - bowl           (inside ) outcome OK chunk OK
+  [objects+drawers] 2.6s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (21     ) outcome X chunk OK   - bottle         (ray    ) outcome X chunk X
+      flat + stove          (82     ) outcome X chunk OK   - bowl           (inside ) outcome OK chunk OK
+  [arrows] 0.3s + plate X   - bottle X
+
+=== put the cream cheese on the stove|2|1|70: outcome + bowl  - bowl  (same)   | chunk (3-D) + bowl  - stove
+  [objects] 2.2s labels ['stove', 'bowl', 'plate', 'cabinet', 'box']
+      raw  + bowl           (ray    ) outcome OK chunk OK   - stove          (48     ) outcome X chunk OK
+      flat + stove          (ray    ) outcome X chunk X   - stove          (inside ) outcome X chunk OK
+  [objects+drawers] 1.9s labels ['stove', 'bowl', 'plate', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + bowl           (45     ) outcome OK chunk OK   - stove          (inside ) outcome X chunk OK
+      flat + stove          (ray    ) outcome X chunk X   - stove          (76     ) outcome X chunk OK
+  [arrows] 0.3s + bowl OK   - spatula X
+
+=== open the drawer|3|0|0: outcome + none  - none  (same)   | chunk (3-D) + plate  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + plate          (inside ) outcome - chunk OK   - bottle         (inside ) outcome - chunk X
+      flat + plate          (inside ) outcome - chunk OK   - plate          (inside ) outcome - chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome - chunk OK   - bottle         (inside ) outcome - chunk X
+      flat + plate          (ray    ) outcome - chunk OK   - plate          (ray    ) outcome - chunk OK
+  [arrows] 0.3s + plate -   - bottle -
+
+=== open the drawer|3|0|10: outcome + none  - middle drawer   | chunk (3-D) + cheese  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + box            (58     ) outcome - chunk OK   - cabinet        (ray    ) outcome X chunk X
+      flat + box            (ray    ) outcome - chunk OK   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.6s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + box            (65     ) outcome - chunk OK   - bowl           (85     ) outcome X chunk X
+      flat + box            (48     ) outcome - chunk OK   - bottom drawer  (202    ) outcome X chunk X
+  [arrows] 0.3s + plate -   - bottle X
+
+=== open the drawer|3|0|20: outcome + none  - middle drawer   | chunk (3-D) + cheese  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + box            (18     ) outcome - chunk OK   - plate          (ray    ) outcome X chunk OK
+      flat + box            (inside ) outcome - chunk OK   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.7s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + ?              (none   ) outcome - chunk X   - plate          (68     ) outcome X chunk OK
+      flat + box            (inside ) outcome - chunk OK   - bottom drawer  (213    ) outcome X chunk X
+  [arrows] 0.3s + spoon -   - bottle X
+
+=== open the drawer|3|1|0: outcome + none  - none  (same)   | chunk (3-D) + plate  - plate
+  [objects] 2.6s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + plate          (inside ) outcome - chunk OK   - bottle         (inside ) outcome - chunk X
+      flat + plate          (inside ) outcome - chunk OK   - plate          (inside ) outcome - chunk OK
+  [objects+drawers] 2.6s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome - chunk OK   - bottle         (inside ) outcome - chunk X
+      flat + plate          (ray    ) outcome - chunk OK   - plate          (ray    ) outcome - chunk OK
+  [arrows] 0.3s + plate -   - bottle -
+
+=== open the drawer|3|1|10: outcome + none  - middle drawer   | chunk (3-D) + bowl  - plate
+  [objects] 2.6s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + plate          (inside ) outcome - chunk X   - cabinet        (ray    ) outcome X chunk X
+      flat + box            (54     ) outcome - chunk X   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (70     ) outcome - chunk X   - bowl           (85     ) outcome X chunk X
+      flat + box            (64     ) outcome - chunk X   - bottom drawer  (200    ) outcome X chunk X
+  [arrows] 0.3s + plate -   - bottle X
+
+=== open the drawer|3|1|20: outcome + none  - middle drawer   | chunk (3-D) + cheese  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'plate', 'bowl', 'cabinet', 'box']
+      raw  + box            (16     ) outcome - chunk OK   - bowl           (71     ) outcome X chunk X
+      flat + box            (inside ) outcome - chunk OK   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + ?              (none   ) outcome - chunk X   - plate          (94     ) outcome X chunk OK
+      flat + box            (25     ) outcome - chunk OK   - bottom drawer  (174    ) outcome X chunk X
+  [arrows] 0.3s + plate -   - bottle X
+
+=== move the bowl|2|1|40: outcome + stove  - stove  (same)   | chunk (3-D) + cheese  - plate
+  [objects] 2.5s labels ['stove', 'bottle', 'bowl', 'plate', 'box', 'cabinet']
+      raw  + stove          (inside ) outcome OK chunk X   - plate          (ray    ) outcome X chunk OK
+      flat + stove          (ray    ) outcome OK chunk X   - plate          (inside ) outcome X chunk OK
+  [objects+drawers] 2.4s labels ['stove', 'bottle', 'box', 'plate', 'bowl', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (39     ) outcome OK chunk X   - plate          (ray    ) outcome X chunk OK
+      flat + stove          (103    ) outcome OK chunk X   - plate          (33     ) outcome X chunk OK
+  [arrows] 0.3s + plate X   - bottle X
+
+=== move the bowl|2|1|50: outcome + plate  - stove   | chunk (3-D) + plate  - cheese
+  [objects] 2.5s labels ['stove', 'bowl', 'bottle', 'cabinet', 'box', 'plate']
+      raw  + plate          (ray    ) outcome OK chunk OK   - stove          (inside ) outcome OK chunk X
+      flat + plate          (inside ) outcome OK chunk OK   - stove          (inside ) outcome OK chunk X
+  [objects+drawers] 2.5s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome OK chunk OK   - stove          (inside ) outcome OK chunk X
+      flat + plate          (ray    ) outcome OK chunk OK   - stove          (68     ) outcome OK chunk X
+  [arrows] 0.3s + plate OK   - spatula X
+
+=== move the bowl|2|0|56: outcome + plate  - stove
+  [objects] 2.5s labels ['stove', 'bowl', 'bottle', 'cabinet', 'box', 'plate']
+      raw  + plate          (ray    ) outcome OK chunk -   - stove          (inside ) outcome OK chunk -
+      flat + plate          (inside ) outcome OK chunk -   - stove          (95     ) outcome OK chunk -
+  [objects+drawers] 4.0s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + plate          (ray    ) outcome OK chunk -   - stove          (inside ) outcome OK chunk -
+      flat + plate          (inside ) outcome OK chunk -   - stove          (96     ) outcome OK chunk -
+  [arrows] 0.3s + plate OK   - box X
+
+=== move the bowl|2|0|50: outcome + stove  - plate
+  [objects] 2.5s labels ['stove', 'bowl', 'bottle', 'cabinet', 'box', 'plate']
+      raw  + stove          (inside ) outcome OK chunk -   - plate          (ray    ) outcome OK chunk -
+      flat + stove          (ray    ) outcome OK chunk -   - plate          (inside ) outcome OK chunk -
+  [objects+drawers] 2.6s labels ['plate', 'bowl', 'stove', 'bottle', 'box', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + stove          (ray    ) outcome OK chunk -   - bowl           (inside ) outcome X chunk -
+      flat + stove          (79     ) outcome OK chunk -   - plate          (inside ) outcome OK chunk -
+  [arrows] 0.3s + plate X   - bottle X
+
+=== move the bowl|2|0|60: outcome + plate  - stove
+  [objects] 4.0s labels ['stove', 'box', 'plate', 'bowl', 'bottle', 'cabinet', 'box', 'box', 'box', 'box']
+      raw  + plate          (ray    ) outcome OK chunk -   - stove          (inside ) outcome OK chunk -
+      flat + plate          (ray    ) outcome OK chunk -   - stove          (ray    ) outcome OK chunk -
+  [objects+drawers] 2.5s labels ['stove', 'bowl', 'bottle', 'box', 'plate', 'top drawer', 'middle drawer', 'bottom drawer']
+      raw  + box            (53     ) outcome X chunk -   - ?              (none   ) outcome X chunk -
+      flat + plate          (63     ) outcome OK chunk -   - stove          (94     ) outcome OK chunk -
+  [arrows] 0.3s + plate OK   - stove OK
+
+TALLY vs executed outcome (frames whose two sides differ): {'objects/raw': '19/30', 'objects/flat': '20/30', 'objects+drawers/raw': '14/30', 'objects+drawers/flat': '19/30', 'arrows': '10/30'}
+TALLY vs chunk-level 3-D name (all graded paths): {'objects/raw': '27/46', 'objects/flat': '32/46', 'objects+drawers/raw': '22/46', 'objects+drawers/flat': '25/46', 'arrows': '18/46'}

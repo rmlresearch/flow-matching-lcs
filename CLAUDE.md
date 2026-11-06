@@ -27,13 +27,17 @@ any size, with no fitting.
 | `robot/mlp.py` | Hand-written NumPy MLP with backprop, Adam and forward-mode JVP. |
 | `robot3/` | Language-conditioned shapes task (PyTorch, object-attention flow policy, CLIP / MiniLM / oracle prompt embeddings). `README.md` has setup, GPU notes and results. |
 | `robot4/` | The robot3 task for **pi0** (lerobot `pi0_base`): rendered top-down camera image + PaliGemma prompt, action expert fine-tuned with the VLM frozen. `pi0flow.py` = pi0 as a differentiable flow map (explicit expert attention over the cached prefix K/V, `torch.func` Jacobians). `README.md` has setup and results. |
+| `robot5/` | **pi0.5** (`lerobot/pi05_libero_finetuned_v044`) on **LIBERO-spatial** (MuJoCo/robosuite Franka). `pi05flow.py` = pi0.5 as a differentiable flow map (adaRMS expert, 1600-D noise); `env5.py` = seeded, exactly restorable scenes (LIBERO hides fixture layout, observable timers, gripper state). `README.md` has setup and results. |
+| `robot6/` | **PushT** (`gym-pusht`): pretrained pi0.5 (`minhwantttt/pi05-pusht-chunk16`, flow map via `robot5/pi05flow.py`) vs `lerobot/diffusion_pusht` as a control for noise-space multimodality. `README.md` has results. |
 
 `robot2/mc/prep.npz` (first-chunk Jacobians, 23 MB) is not in the bundle; rebuild it with
 `cd robot2 && python mc_eval.py prep` (about 4 min) before running the LCS or chunk studies.
 Likewise `robot4/out/pi0_arrive/lcs_scan.npz` (19 MB): rebuild with
 `cd robot4 && ../.venv/bin/python lcs4.py pi0_arrive scan` (about 50 min on the RTX 5090; needs
 `policies/pi0_arrive.pt`, which is not in the repo either — retrain with
-`pi0flow.py train arrive 20000`, about 2.8 h).
+`pi0flow.py train arrive 20000`, about 2.8 h). `robot5/out/goal_screen.npz` (open-loop prompt
+screen, 22 MB) is rebuilt by `cd robot5 && python goal5.py screen`; `robot6/policies/` (the
+migrated SmolVLA checkpoint, 935 MB) by the migration line in `robot6/README.md`.
 
 ## Conventions
 

@@ -1,0 +1,69 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+Warning: make sure gym is installed if you want to use the GymWrapper.
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    69s]   move the bowl|3|0 t 40: OPEN s1 37.9 jump 124 cm; hold + ['bowl->plate', 'bowl->plate']  - ['bowl->stove', 'bowl->stove']
+[    78s]   move the bowl|3|0 t 50: OPEN s1 27.1 jump 167 cm; hold + ['bowl->stove', 'bowl->stove']  - ['bowl->plate', 'bowl->plate']
+[    83s] move the bowl|3|0: ended bowl->stove at t 83; open replans [40, 50]; jumps 6 7 5 13 124 167 14 11 12  (32s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   100s]   move the bowl|3|1 t 40: OPEN s1 5.4 jump 111 cm; hold + ['bowl->plate', 'bowl->plate']  - ['bowl->plate', 'bowl->plate']
+[   105s] move the bowl|3|1: ended bowl->plate at t 76; open replans [40]; jumps 6 6 5 8 112 35 7 9  (22s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   123s]   tidy up the table|2|0 t 0: OPEN s1 70.0 jump 156 cm; hold + ['bowl->stove', 'bowl->stove']  - ['none', 'stove on']
+[   140s]   tidy up the table|2|0 t 40: OPEN s1 6.0 jump 81 cm; hold + ['bowl->plate', 'none']  - ['bowl->plate', 'bowl->plate']
+[   150s]   tidy up the table|2|0 t 50: OPEN s1 8.2 jump 158 cm; hold + ['bowl->stove', 'bowl->stove']  - ['bowl->plate', 'bowl->plate']
+[   155s] tidy up the table|2|0: ended bowl->plate at t 89; open replans [0, 40, 50]; jumps 155 33 9 14 135 158 127 19 19  (50s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   172s]   tidy up the table|2|1 t 0: OPEN s1 70.0 jump 156 cm; hold + ['bowl->stove', 'bowl->stove']  - ['none', 'stove on']
+[   186s]   tidy up the table|2|1 t 10: OPEN s1 4.0 jump 54 cm; hold + ['bowl->stove', 'bowl->stove']  - ['bowl->plate', 'bowl->plate']
+[   200s]   tidy up the table|2|1 t 40: OPEN s1 9.6 jump 100 cm; hold + ['bowl->stove', 'bowl->stove']  - ['bowl->stove', 'bowl->stove']
+[   207s] tidy up the table|2|1: ended bowl->stove at t 86; open replans [0, 10, 40]; jumps 155 54 9 14 92 189 35 18 26  (52s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   221s] put something on the plate|0|0: ended bowl->plate at t 72; open replans []; jumps 8 5 4 6 4 5 5 16  (14s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   235s] put something on the plate|0|1: ended bowl->plate at t 71; open replans []; jumps 8 4 4 6 3 6 8 7  (14s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   253s]   put the cream cheese on the stove|2|0 t 30: OPEN s1 1.4 jump 59 cm; hold + ['cheese->bowl', 'cheese->stove']  - ['cheese->bowl', 'cheese->bowl']
+[   266s]   put the cream cheese on the stove|2|0 t 50: OPEN s1 10.2 jump 137 cm; hold + ['cheese->stove', 'cheese->stove']  - ['cheese->bowl', 'cheese->bowl']
+[   277s]   put the cream cheese on the stove|2|0 t 70: OPEN s1 2.6 jump 85 cm; hold + ['cheese->bowl', 'cheese->bowl']  - ['cheese->stove', 'cheese->stove']
+[   285s] put the cream cheese on the stove|2|0: ended None at t 130; open replans [30, 50, 70]; jumps 7 5 9 57 10 137 13 85 8 27 79 9 12  (50s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   303s]   put the cream cheese on the stove|2|1 t 30: OPEN s1 2.7 jump 65 cm; hold + ['none', 'cheese->bowl']  - ['cheese->bowl', 'cheese->bowl']
+[   314s]   put the cream cheese on the stove|2|1 t 50: OPEN s1 12.4 jump 149 cm; hold + ['cheese->bowl', 'cheese->bowl']  - ['cheese->bowl', 'cheese->bowl']
+[   322s]   put the cream cheese on the stove|2|1 t 70: OPEN s1 20.1 jump 55 cm; hold + ['cheese->bowl', 'cheese->bowl']  - ['cheese->bowl', 'cheese->bowl']
+[   323s] put the cream cheese on the stove|2|1: ended cheese->bowl at t 80; open replans [30, 50, 70]; jumps 7 6 10 64 10 149 18 55  (38s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   342s] put the cream cheese on the plate|3|0: ended cheese->plate at t 107; open replans []; jumps 9 9 8 14 12 11 6 15 7 8 13  (20s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   357s] put the cream cheese on the plate|3|1: ended cheese->bowl at t 78; open replans []; jumps 9 9 9 10 7 15 9 11  (14s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   379s] open a drawer|1|0: ended None at t 130; open replans []; jumps 40 4 3 3 2 6 9 27 21 7 4 3 5  (22s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   401s] open a drawer|1|1: ended None at t 130; open replans []; jumps 40 6 3 3 3 6 9 14 7 6 5 4 4  (22s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   419s]   open the drawer|3|0 t 0: OPEN s1 15.9 jump 80 cm; hold + ['none', 'none']  - ['none', 'none']
+[   436s]   open the drawer|3|0 t 10: OPEN s1 10.5 jump 84 cm; hold + ['none', 'none']  - ['middle drawer', 'middle drawer']
+[   453s]   open the drawer|3|0 t 20: OPEN s1 5.5 jump 87 cm; hold + ['none', 'none']  - ['middle drawer', 'middle drawer']
+[   470s] open the drawer|3|0: ended None at t 130; open replans [0, 10, 20]; jumps 80 83 86 6 8 6 8 8 8 7 7 13 9  (69s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   488s]   open the drawer|3|1 t 0: OPEN s1 15.9 jump 80 cm; hold + ['none', 'none']  - ['none', 'none']
+[   505s]   open the drawer|3|1 t 10: OPEN s1 10.0 jump 85 cm; hold + ['none', 'none']  - ['middle drawer', 'none']
+[   523s]   open the drawer|3|1 t 20: OPEN s1 7.2 jump 97 cm; hold + ['none', 'none']  - ['middle drawer', 'middle drawer']
+[   539s] open the drawer|3|1: ended None at t 130; open replans [0, 10, 20]; jumps 80 85 96 8 7 6 8 9 9 13 13 15 15  (69s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   557s]   move the bowl|2|1 t 40: OPEN s1 9.6 jump 112 cm; hold + ['bowl->stove', 'bowl->stove']  - ['bowl->stove', 'bowl->plate']
+[   566s]   move the bowl|2|1 t 50: OPEN s1 14.2 jump 165 cm; hold + ['bowl->plate', 'bowl->plate']  - ['bowl->stove', 'bowl->stove']
+[   571s] move the bowl|2|1: ended bowl->stove at t 83; open replans [40, 50]; jumps 7 5 6 10 112 165 19 15 20  (32s)

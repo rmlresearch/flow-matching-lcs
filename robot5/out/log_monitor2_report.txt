@@ -1,0 +1,52 @@
+136 (prompt, init) pairs; split in this run's 4 seeds: 18; two real modes among these + goal5's 8 seeds: 16
+ridge (step) at t 0: 11 pairs; a step at some later replan <= 60: 8 pairs
+
+pair-level AUROC vs split4:
+  t0 jump along v1 (cm)        AUROC 0.60 [0.46, 0.73]  within init 0.42 0.71 0.52 0.74  within underspecified/novel 0.49
+  t0 sigma1                    AUROC 0.62 [0.49, 0.74]  within init 0.46 0.68 0.54 0.76  within underspecified/novel 0.50
+  t0 step (0/1)                AUROC 0.58 [0.47, 0.70]  within init 0.45 0.48 0.57 0.73  within underspecified/novel 0.54
+  online max jump (cm)         AUROC 0.64 [0.48, 0.79]  within init 0.42 0.71 0.58 0.82  within underspecified/novel 0.52
+  online step any (0/1)        AUROC 0.53 [0.47, 0.60]  within init 0.47 0.48 0.48 0.63  within underspecified/novel 0.53
+  online drift (cm, words)     AUROC 0.57 [0.47, 0.67]  within init 0.45 0.48 0.56 0.69  within underspecified/novel 0.55
+  online off-basin (cm, words) AUROC 0.57 [0.47, 0.68]  within init 0.45 0.48 0.56 0.71  within underspecified/novel 0.54
+  online step as a detector: precision 0.25 recall 0.11 (TP 2, FP 6, FN 16)
+
+pair-level AUROC vs mode12:
+  t0 jump along v1 (cm)        AUROC 0.59 [0.51, 0.68]  within init 0.61 0.71 0.49 0.54  within underspecified/novel 0.50
+  t0 sigma1                    AUROC 0.68 [0.57, 0.78]  within init 0.82 0.68 0.52 0.73  within underspecified/novel 0.57
+  t0 step (0/1)                AUROC 0.60 [0.52, 0.63]  within init 0.63 0.48 0.59 0.63  within underspecified/novel 0.57
+  online max jump (cm)         AUROC 0.68 [0.60, 0.73]  within init 0.69 0.71 0.57 0.73  within underspecified/novel 0.65
+  online step any (0/1)        AUROC 0.61 [0.48, 0.71]  within init 0.65 0.48 0.48 0.73  within underspecified/novel 0.64
+  online drift (cm, words)     AUROC 0.62 [0.52, 0.67]  within init 0.62 0.48 0.59 0.68  within underspecified/novel 0.62
+  online off-basin (cm, words) AUROC 0.62 [0.52, 0.69]  within init 0.62 0.48 0.59 0.71  within underspecified/novel 0.62
+  online step as a detector: precision 0.50 recall 0.25 (TP 4, FP 4, FN 12)
+
+pairs with a step online (first step time, outcome times, decoded words):
+  init 0       'put the bowl on the burner' (paraphrase): t0 ramp None/None; online step@10 'put the bowl on the oven'/'put the bowl on the burner plates' (+0.97/-0.94); outcomes bowl->stove@81, bowl->stove@82, bowl->stove@83, bowl->stove@84
+  init 0       'put something on top of the cabinet' (underspecified): t0 STEP 'put bowl on top of the cabinet'/'put something pick top of the cabinet'; online step@-1 -; outcomes bowl->cabinet top@87, bowl->cabinet top@86, bowl->cabinet top@87, bowl->cabinet top@84
+  init 0       'put the wine bottle somewhere' (underspecified): t0 STEP None/'put the wine push somewhere'; online step@-1 -; outcomes bottle->rack@157, bottle->rack@134, bottle->rack@170, bottle->rack@145
+  init 0 SPLIT 'tidy up the table' (underspecified): t0 STEP 'tidy up the ball'/'tidy up the ing'; online step@30 'tidy up which table'/'tidy on up the table' (+0.95/-1.00); outcomes bowl->plate@77, bowl->plate@75, bowl->plate@74, bowl->plate@75
+  init 1       'tidy up the table' (underspecified): t0 STEP 'tidy up the bowl'/'madeira up the table'; online step@10 'tidy at the table plate'/'tidy up the madrid' (+0.77/-0.99); outcomes bowl->stove@81, bowl->stove@79, bowl->stove@121, bowl->stove@81
+  init 2       'put the bowl on the burner' (paraphrase): t0 ramp None/None; online step@10 'put the bowl on the oven'/'put the bowl on the plates burner' (+0.91/-0.91); outcomes bowl->stove@84, bowl->stove@78, bowl->stove@127, bowl->stove@82
+  init 2       'open a drawer' (underspecified): t0 STEP 'top open a drawer'/'middle open a drawer'; online step@-1 -; outcomes middle drawer@117, middle drawer@111, middle drawer@126, middle drawer@117
+  init 2       'open the drawer' (underspecified): t0 STEP 'middle open the drawer'/'top open the drawer'; online step@-1 -; outcomes middle drawer@117, middle drawer@114, middle drawer@126, middle drawer@116
+  init 2 SPLIT 'tidy up the table' (underspecified): t0 STEP 'tidy on the table'/'tidy up the mug'; online step@-1 -; outcomes bowl->plate@89, bowl->stove@86, bowl->plate@87, bowl->stove@87
+  init 3       'put the bowl on the burner' (paraphrase): t0 ramp None/None; online step@10 'put the bowl on the oven'/'put the bowl on the burner plate' (+0.95/-0.97); outcomes bowl->stove@83, bowl->stove@80, bowl->stove@85, bowl->stove@85
+  init 3 SPLIT 'open a drawer' (underspecified): t0 STEP 'top open a drawer'/'open lower drawer'; online step@10 'top open a drawer'/'open a cabinet' (+0.99/-0.97); outcomes bottom drawer open@300, bowl->top drawer@169, bowl->top drawer@164, bowl->top drawer@227
+  init 3 SPLIT 'open the drawer' (underspecified): t0 STEP 'middle open the drawer'/'top open the drawer'; online step@10 'open break drawer'/'top open the drawer' (+0.97/-0.99); outcomes bowl->top drawer@181, bowl->top drawer@239, middle drawer@127, bowl->top drawer@240
+  init 3       'put something on top of the cabinet' (underspecified): t0 STEP 'put something on top of the cabinet dove'/'put move on top of the cabinet'; online step@-1 -; outcomes bowl->cabinet top@89, bowl->cabinet top@86, bowl->cabinet top@84, bowl->cabinet top@87
+  init 3 SPLIT 'put the bowl somewhere' (underspecified): t0 ramp None/None; online step@20 'put the bowl frame somewhere bowl'/'put the bowl instal somewhere' (+0.97/-0.98); outcomes bowl->stove@82, bowl->stove@82, bowl->stove@84, bowl->stove@84
+  init 3       'tidy up the table' (underspecified): t0 STEP 'plate tidy up the table'/'turn up the table'; online step@-1 -; outcomes none@300, stove on@99, stove on@79, none@300
+
+split pairs without any step (missed):
+  init 0 'put the bowl somewhere' (underspecified): max online jump 12 cm; outcomes ['bowl->stove']
+  init 2 'open the top drawer and put the bowl inside' (trained): max online jump 9 cm; outcomes ['bowl->top drawer']
+  init 2 'move the bowl' (underspecified): max online jump 12 cm; outcomes ['bowl->plate', 'bowl->stove']
+  init 3 'place the bowl onto the plate' (paraphrase): max online jump 7 cm; outcomes ['bowl->plate']
+  init 3 'move the bowl' (underspecified): max online jump 26 cm; outcomes ['bowl->plate', 'bowl->stove']
+  init 0 'put something on the plate' (underspecified): max online jump 9 cm; outcomes ['bowl->plate', 'cheese->plate']
+  init 1 'pull out the middle drawer' (paraphrase): max online jump 7 cm; outcomes ['bottom drawer open', 'middle drawer']
+  init 1 'open a drawer' (underspecified): max online jump 40 cm; outcomes ['bottom drawer open', 'middle drawer']
+  init 1 'open the drawer' (underspecified): max online jump 38 cm; outcomes ['bottom drawer open', 'middle drawer']
+  init 2 'put the cream cheese on the stove' (novel): max online jump 7 cm; outcomes ['cheese->bowl', 'cheese->stove']
+  init 3 'put the cream cheese on the plate' (novel): max online jump 10 cm; outcomes ['cheese->bowl', 'cheese->plate']

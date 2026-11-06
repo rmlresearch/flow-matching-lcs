@@ -1,0 +1,50 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    55s] move the bowl|3|0|40: held bowl; + ('plate', 'near')  - ('cabinet', 'line')
+[    55s] move the bowl|3|0|50: held bowl; + ('stove', 'line')  - ('plate', 'near')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    58s] move the bowl|3|1|40: held bowl; + ('plate', 'near')  - ('cabinet', 'line')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    59s] tidy up the table|2|0|0: held None; + ('bottle', 'near')  - ('stove', 'near')
+[    61s] tidy up the table|2|0|40: held bowl; + ('cabinet', 'line')  - ('plate', 'near')
+[    61s] tidy up the table|2|0|50: held bowl; + ('cheese', 'line')  - ('plate', 'near')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    62s] tidy up the table|2|1|0: held None; + ('bottle', 'near')  - ('stove', 'near')
+[    63s] tidy up the table|2|1|10: held None; + ('bowl', 'near')  - ('bottle', 'near')
+[    64s] tidy up the table|2|1|40: held bowl; + ('cabinet', 'line')  - ('plate', 'near')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    66s] put the cream cheese on the stove|2|0|30: held None; + ('cheese', 'line')  - ('bowl', 'near')
+[    66s] put the cream cheese on the stove|2|0|50: held cheese; + ('stove', 'line')  - ('bowl', 'near')
+[    67s] put the cream cheese on the stove|2|0|70: held cheese; + ('bowl', 'near')  - ('bowl', 'line')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    69s] put the cream cheese on the stove|2|1|30: held None; + ('cheese', 'line')  - ('bowl', 'near')
+[    70s] put the cream cheese on the stove|2|1|50: held cheese; + ('stove', 'line')  - ('bowl', 'near')
+[    71s] put the cream cheese on the stove|2|1|70: held cheese; + ('bowl', 'near')  - ('stove', 'line')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    72s] open the drawer|3|0|0: held None; + ('plate', 'near')  - ('plate', 'line')
+[    72s] open the drawer|3|0|10: held None; + ('cheese', 'near')  - ('cabinet', 'ray')
+[    73s] open the drawer|3|0|20: held None; + ('cheese', 'near')  - ('plate', 'near')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    74s] open the drawer|3|1|0: held None; + ('plate', 'near')  - ('plate', 'line')
+[    75s] open the drawer|3|1|10: held None; + ('bowl', 'near')  - ('cabinet', 'line')
+[    75s] open the drawer|3|1|20: held None; + ('cheese', 'near')  - ('plate', 'ray')
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    78s] move the bowl|2|1|40: held bowl; + ('cheese', 'line')  - ('plate', 'near')
+[    78s] move the bowl|2|1|50: held bowl; + ('plate', 'near')  - ('cheese', 'line')

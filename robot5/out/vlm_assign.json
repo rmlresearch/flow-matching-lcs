@@ -1,0 +1,44 @@
+{
+ "56": {
+  "plus": [
+   "plate",
+   "ray"
+  ],
+  "minus": [
+   "stove",
+   "inside"
+  ],
+  "truth": {
+   "plus": "plate",
+   "minus": "stove"
+  }
+ },
+ "50": {
+  "plus": [
+   "stove",
+   "inside"
+  ],
+  "minus": [
+   "plate",
+   "ray"
+  ],
+  "truth": {
+   "plus": "stove",
+   "minus": "plate"
+  }
+ },
+ "60": {
+  "plus": [
+   "plate",
+   "ray"
+  ],
+  "minus": [
+   "stove",
+   "inside"
+  ],
+  "truth": {
+   "plus": "plate",
+   "minus": "stove"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    72s] seed 0 t 40: {np.str_('bowl->plate'): np.int64(8), np.str_('bowl->stove'): np.int64(4)}  plan50 within 4.961817674393109 between 5.760787081785395 cm | first10 within 0.40349200229469684 between 0.3279648253210385 cm | mean sep 4.454474259102155 proj {'bowl->plate': [3.1, 3.7, -0.7, 3.0, -1.3, 0.4, -0.2, 3.9], 'bowl->stove': [-0.6, -5.5, -1.6, -4.2]}  (18s)
+[    91s] seed 3 t 30: {np.str_('bowl->plate'): np.int64(11), np.str_('bowl->stove'): np.int64(1)}  plan50 within 5.19343163027978 between 7.651986196782838 cm | first10 within 0.4824460520001766 between 0.4936980521740559 cm | mean sep 7.159174984251739 proj {'bowl->plate': [1.0, 4.8, 1.6, -0.2, -1.7, 0.5, -1.7, 2.3, -1.0, -2.3, 3.4], 'bowl->stove': [-6.6]}  (20s)
+[   115s] seed 2 t 20: {np.str_('bowl->plate'): np.int64(4), np.str_('bowl->stove'): np.int64(8)}  plan50 within 2.9495097205263106 between 2.8885465998009034 cm | first10 within 0.3079176989867375 between 0.25900545684387155 cm | mean sep 1.2784645506504813 proj {'bowl->plate': [1.4, 0.5, 1.7, -0.3], 'bowl->stove': [-2.1, 0.1, 0.9, -1.1, -0.5, 1.3, -0.6, -1.5]}  (23s)
+[   145s] seed 0 t 0: {np.str_('bowl->plate'): np.int64(4), np.str_('bowl->stove'): np.int64(7), np.str_('none'): np.int64(1)}  plan50 within 4.299350669220525 between 4.168313109146447 cm | first10 within 0.8296948150670571 between 0.7857255774494457 cm | mean sep 2.0213360949678805 proj {'bowl->plate': [-0.8, 2.5, 0.3, 2.6], 'bowl->stove': [-0.9, 1.0, -3.7, 0.5, 2.0, -1.1, -4.1], 'none': [1.6]}  (31s)

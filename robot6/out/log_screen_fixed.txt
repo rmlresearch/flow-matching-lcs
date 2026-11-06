@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: minhwantttt/pi05-pusht-chunk16
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[42s] 100 initial states
+[60s] rollout 0: 38 states, success False
+[67s] rollout 1: 14 states, success True
+[86s] rollout 2: 38 states, success False
+[104s] rollout 3: 38 states, success False
+[111s] rollout 4: 13 states, success True
+[124s] rollout 5: 27 states, success True
+[142s] rollout 6: 38 states, success False
+[152s] rollout 7: 19 states, success True
+[159s] rollout 8: 15 states, success True
+[178s] rollout 9: 38 states, success False
+[191s] rollout 10: 27 states, success True
+[200s] rollout 11: 19 states, success True
+424 states: plan spread across seeds (px) median 2.4, 90% 7.7, max 38.3 | 2-means separation median 1.15, max 8.04
+   roll seed 2001 t 80: spread 14.6 px, separation 8.04, agent [264. 246.]
+   init seed 1055 t 0: spread 38.3 px, separation 2.79, agent [233. 369.]
+   roll seed 2000 t 128: spread 10.0 px, separation 2.69, agent [120. 302.]
+   roll seed 2005 t 88: spread 27.0 px, separation 2.66, agent [161. 303.]
+   roll seed 2000 t 48: spread 23.3 px, separation 2.35, agent [161. 288.]
+   roll seed 2007 t 112: spread 8.0 px, separation 2.27, agent [285. 221.]
+   roll seed 2008 t 88: spread 16.9 px, separation 2.27, agent [283. 260.]
+   roll seed 2005 t 96: spread 9.2 px, separation 2.24, agent [127. 299.]

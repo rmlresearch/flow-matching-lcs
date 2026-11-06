@@ -1,0 +1,100 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    67s] 'open a drawer' t   0: sigma1 0.521 sigma_E 0.557 (J_E 11s) 
+[    82s] 'open a drawer' t  10: sigma1 0.219 sigma_E 0.747 (J_E 11s) e10.01: arm 0.04mm gain 12.2 | e10.1: arm 0.39mm gain 2.0 | e11: arm 3.91mm gain 0.6 | rand: arm 0.30mm gain 0.6
+[    96s] 'open a drawer' t  20: sigma1 0.533 sigma_E 1.467 (J_E 11s) e10.01: arm 0.05mm gain 11.4 | e10.1: arm 0.49mm gain 2.8 | e11: arm 4.82mm gain 2.0 | rand: arm 0.64mm gain 7.0
+[   110s] 'open a drawer' t  30: sigma1 0.595 sigma_E 0.754 (J_E 11s) e10.01: arm 0.05mm gain 21.8 | e10.1: arm 0.48mm gain 3.1 | e11: arm 4.50mm gain 0.6 | rand: arm 0.44mm gain 3.0
+[   124s] 'open a drawer' t  40: sigma1 0.391 sigma_E 0.538 (J_E 11s) e10.01: arm 0.02mm gain 2.7 | e10.1: arm 0.21mm gain 0.4 | e11: arm 2.23mm gain 0.5 | rand: arm 0.93mm gain 1.0
+[   138s] 'open a drawer' t  50: sigma1 0.222 sigma_E 0.220 (J_E 11s) e10.01: arm 0.05mm gain 1.0 | e10.1: arm 0.50mm gain 0.3 | e11: arm 4.83mm gain 0.1 | rand: arm 0.42mm gain 0.3
+[   152s] 'open a drawer' t  60: sigma1 0.362 sigma_E 0.401 (J_E 11s) e10.01: arm 0.05mm gain 2.8 | e10.1: arm 0.48mm gain 0.4 | e11: arm 4.53mm gain 0.6 | rand: arm 0.42mm gain 0.3
+[   166s] 'open a drawer' t  70: sigma1 0.384 sigma_E 0.322 (J_E 11s) e10.01: arm 0.04mm gain 3.6 | e10.1: arm 0.39mm gain 1.1 | e11: arm 3.88mm gain 0.4 | rand: arm 0.46mm gain 1.2
+[   181s] 'open a drawer' t  80: sigma1 0.450 sigma_E 0.369 (J_E 11s) e10.01: arm 0.03mm gain 2.2 | e10.1: arm 0.28mm gain 0.1 | e11: arm 3.63mm gain 0.4 | rand: arm 0.35mm gain 0.4
+[   195s] 'open a drawer' t  90: sigma1 1.103 sigma_E 0.486 (J_E 11s) e10.01: arm 0.22mm gain 130.0 | e10.1: arm 0.35mm gain 23.2 | e11: arm 3.98mm gain 4.0 | rand: arm 0.51mm gain 7.7
+[   209s] 'open a drawer' t 100: sigma1 0.345 sigma_E 0.250 (J_E 11s) e10.01: arm 0.24mm gain 12.4 | e10.1: arm 1.76mm gain 5.2 | e11: arm 2.09mm gain 0.2 | rand: arm 0.29mm gain 0.6
+[   223s] 'open a drawer' t 110: sigma1 0.205 sigma_E 0.236 (J_E 11s) e10.01: arm 0.02mm gain 1.0 | e10.1: arm 0.23mm gain 1.4 | e11: arm 2.80mm gain 0.2 | rand: arm 0.18mm gain 1.6
+[   237s] 'open a drawer' t 114: sigma1 0.600 sigma_E 0.388 (J_E 11s) e10.01: arm 0.01mm gain 1.4 | e10.1: arm 0.13mm gain 1.3 | e11: arm 1.32mm gain 0.6 | rand: arm 0.54mm gain 4.8
+[   238s] main rollout: middle drawer at t 124; wrote /home/james/Projects/flow-matching-lcs/robot5/out/latent_open_a_drawer_3_0.json
+
+'open a drawer' init 3 seed 0 -> middle drawer   (gain = cm of next plan per cm of this chunk's path; sigma_E = cm per unit |dE|, any direction)
+     t  sig1   sigE | e1 d=0.01:    arm   gain | d=0.1:    arm  |dE|   gain    lin   cos   cam1/cam2/text | d=1:    arm   gain | rand:    arm   gain
+    10 0.219  0.747 |  0.039   12.2 |   0.39  64.4    2.0    2.1  1.00   0.23/0.77/0.00 |   3.91    0.6 |   0.30    0.6
+    20 0.533  1.467 |  0.049   11.4 |   0.49  41.3    2.8    2.7  1.00   0.25/0.75/0.00 |   4.82    2.0 |   0.64    7.0
+    30 0.595  0.754 |  0.048   21.8 |   0.48  79.1    3.1    3.1  1.00   0.50/0.49/0.01 |   4.50    0.6 |   0.44    3.0
+    40 0.391  0.538 |  0.021    2.7 |   0.21  70.6    0.4    0.4  1.00   0.23/0.77/0.00 |   2.23    0.5 |   0.93    1.0
+    50 0.222  0.220 |  0.050    1.0 |   0.50  48.5    0.3    0.3  1.00   0.28/0.72/0.00 |   4.83    0.1 |   0.42    0.3
+    60 0.362  0.401 |  0.049    2.8 |   0.48  43.0    0.4    0.5  0.99   0.27/0.73/0.00 |   4.53    0.6 |   0.42    0.3
+    70 0.384  0.322 |  0.039    3.6 |   0.39  66.5    1.1    1.1  1.00   0.43/0.57/0.00 |   3.88    0.4 |   0.46    1.2
+    80 0.450  0.369 |  0.032    2.2 |   0.28  64.7    0.1    0.2  0.94   0.19/0.80/0.01 |   3.63    0.4 |   0.35    0.4
+    90 1.103  0.486 |  0.224  130.0 |   0.35 173.9   23.2   25.5  1.00   0.03/0.97/0.00 |   3.98    4.0 |   0.51    7.7
+   100 0.345  0.250 |  0.239   12.4 |   1.76 500.3    5.2    3.7  0.79   0.10/0.68/0.22 |   2.09    0.2 |   0.29    0.6
+   110 0.205  0.236 |  0.023    1.0 |   0.23  44.3    1.4    1.4  1.00   0.27/0.73/0.00 |   2.80    0.2 |   0.18    1.6
+   120 0.600  0.388 |  0.013    1.4 |   0.13  31.3    1.3    1.3  1.00   0.25/0.75/0.00 |   1.32    0.6 |   0.54    4.8
+  re-executing the base chunk changes the next plan by max 0.00e+00 cm (restore check)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    69s] 'open the middle drawer of the cabinet' t   0: sigma1 0.409 sigma_E 0.438 (J_E 12s) 
+[    84s] 'open the middle drawer of the cabinet' t  10: sigma1 0.229 sigma_E 0.247 (J_E 12s) e10.01: arm 0.04mm gain 1.8 | e10.1: arm 0.36mm gain 0.3 | e11: arm 3.70mm gain 0.2 | rand: arm 0.29mm gain 0.9
+[    99s] 'open the middle drawer of the cabinet' t  20: sigma1 0.207 sigma_E 0.169 (J_E 12s) e10.01: arm 0.04mm gain 1.2 | e10.1: arm 0.39mm gain 0.2 | e11: arm 3.97mm gain 0.1 | rand: arm 0.55mm gain 0.5
+[   114s] 'open the middle drawer of the cabinet' t  30: sigma1 0.188 sigma_E 0.147 (J_E 12s) e10.01: arm 0.04mm gain 0.5 | e10.1: arm 0.36mm gain 0.3 | e11: arm 3.58mm gain 0.1 | rand: arm 0.37mm gain 0.3
+[   129s] 'open the middle drawer of the cabinet' t  40: sigma1 0.184 sigma_E 0.176 (J_E 12s) e10.01: arm 0.03mm gain 0.4 | e10.1: arm 0.31mm gain 0.5 | e11: arm 3.02mm gain 0.1 | rand: arm 0.51mm gain 0.2
+[   144s] 'open the middle drawer of the cabinet' t  50: sigma1 0.293 sigma_E 0.250 (J_E 12s) e10.01: arm 0.03mm gain 0.8 | e10.1: arm 0.33mm gain 0.5 | e11: arm 2.95mm gain 0.0 | rand: arm 0.36mm gain 0.8
+[   159s] 'open the middle drawer of the cabinet' t  60: sigma1 0.519 sigma_E 0.359 (J_E 11s) e10.01: arm 0.05mm gain 3.5 | e10.1: arm 0.47mm gain 0.9 | e11: arm 4.63mm gain 0.6 | rand: arm 0.47mm gain 1.1
+[   173s] 'open the middle drawer of the cabinet' t  70: sigma1 0.379 sigma_E 0.396 (J_E 11s) e10.01: arm 0.03mm gain 3.8 | e10.1: arm 0.33mm gain 0.4 | e11: arm 3.37mm gain 0.1 | rand: arm 0.51mm gain 1.3
+[   188s] 'open the middle drawer of the cabinet' t  80: sigma1 0.531 sigma_E 0.381 (J_E 12s) e10.01: arm 0.04mm gain 2.4 | e10.1: arm 0.44mm gain 0.6 | e11: arm 4.41mm gain 0.4 | rand: arm 0.34mm gain 1.8
+[   202s] 'open the middle drawer of the cabinet' t  90: sigma1 1.782 sigma_E 1.055 (J_E 11s) e10.01: arm 0.51mm gain 80.0 | e10.1: arm 0.45mm gain 5.5 | e11: arm 0.82mm gain 3.1 | rand: arm 0.49mm gain 18.9
+[   216s] 'open the middle drawer of the cabinet' t 100: sigma1 1.559 sigma_E 0.465 (J_E 11s) e10.01: arm 0.00mm gain 2.1 | e10.1: arm 0.01mm gain 0.6 | e11: arm 0.07mm gain 0.4 | rand: arm 0.00mm gain 0.3
+[   230s] 'open the middle drawer of the cabinet' t 110: sigma1 1.909 sigma_E 1.531 (J_E 11s) e10.01: arm 0.01mm gain 8.9 | e10.1: arm 0.12mm gain 22.1 | e11: arm 1.19mm gain 3.0 | rand: arm 0.12mm gain 1.6
+[   244s] 'open the middle drawer of the cabinet' t 120: sigma1 0.235 sigma_E 0.277 (J_E 11s) e10.01: arm 0.04mm gain 1.8 | e10.1: arm 0.38mm gain 1.2 | e11: arm 3.77mm gain 0.3 | rand: arm 0.39mm gain 0.5
+[   258s] 'open the middle drawer of the cabinet' t 126: sigma1 0.218 sigma_E 0.223 (J_E 11s) e10.01: arm 0.01mm gain 0.7 | e10.1: arm 0.14mm gain 0.5 | e11: arm 1.50mm gain 0.2 | rand: arm 0.37mm gain 0.4
+[   258s] main rollout: middle drawer at t 136; wrote /home/james/Projects/flow-matching-lcs/robot5/out/latent_open_the_middle_drawer_of_the_cabinet_3_0.json
+
+'open the middle drawer of the cabinet' init 3 seed 0 -> middle drawer   (gain = cm of next plan per cm of this chunk's path; sigma_E = cm per unit |dE|, any direction)
+     t  sig1   sigE | e1 d=0.01:    arm   gain | d=0.1:    arm  |dE|   gain    lin   cos   cam1/cam2/text | d=1:    arm   gain | rand:    arm   gain
+    10 0.229  0.247 |  0.036    1.8 |   0.36  37.6    0.3    0.3  1.00   0.49/0.51/0.00 |   3.70    0.2 |   0.29    0.9
+    20 0.207  0.169 |  0.039    1.2 |   0.39  79.5    0.2    0.2  1.00   0.27/0.72/0.01 |   3.97    0.1 |   0.55    0.5
+    30 0.188  0.147 |  0.036    0.5 |   0.36  43.6    0.3    0.3  1.00   0.12/0.88/0.00 |   3.58    0.1 |   0.37    0.3
+    40 0.184  0.176 |  0.033    0.4 |   0.31  42.4    0.5    0.5  1.00   0.05/0.95/0.00 |   3.02    0.1 |   0.51    0.2
+    50 0.293  0.250 |  0.034    0.8 |   0.33  28.1    0.5    0.5  1.00   0.32/0.68/0.00 |   2.95    0.0 |   0.36    0.8
+    60 0.519  0.359 |  0.048    3.5 |   0.47  72.3    0.9    0.8  0.99   0.38/0.62/0.00 |   4.63    0.6 |   0.47    1.1
+    70 0.379  0.396 |  0.033    3.8 |   0.33  37.8    0.4    0.4  0.93   0.21/0.79/0.00 |   3.37    0.1 |   0.51    1.3
+    80 0.531  0.381 |  0.044    2.4 |   0.44  96.4    0.6    0.5  0.99   0.22/0.73/0.05 |   4.41    0.4 |   0.34    1.8
+    90 1.782  1.055 |  0.512   80.0 |   0.45 153.3    5.5    4.9  0.91   0.21/0.76/0.03 |   0.82    3.1 |   0.49   18.9
+   100 1.559  0.465 |  0.001    2.1 |   0.01  52.0    0.6    0.6  0.94   0.12/0.72/0.15 |   0.07    0.4 |   0.00    0.3
+   110 1.909  1.531 |  0.012    8.9 |   0.12  33.3   22.1   21.4  1.00   0.08/0.92/0.00 |   1.19    3.0 |   0.12    1.6
+   120 0.235  0.277 |  0.039    1.8 |   0.38  63.0    1.2    1.2  1.00   0.26/0.74/0.00 |   3.77    0.3 |   0.39    0.5
+   130 0.218  0.223 |  0.014    0.7 |   0.14  34.0    0.5    0.5  1.00   0.35/0.65/0.00 |   1.50    0.2 |   0.37    0.4
+  re-executing the base chunk changes the next plan by max 0.00e+00 cm (restore check)

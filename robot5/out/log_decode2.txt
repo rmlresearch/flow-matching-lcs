@@ -1,0 +1,127 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    82s]   clusters by final eef: sizes [8, 8], centres (cm) [21.7, 2.7, -7.2] vs [23.9, -6.4, -7.3]; events [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+[    83s] t 0: clusters [8, 8], |Delta_branch| 14.1 cm, cos(cf) 0.63, lambda0 0.86
+[    83s]   first-order ranks at 'open' (of 59094; + side rank, - side rank = 59094-1-rank): top:0/+67.2 middle:59088/-39.2 bottom:302/+16.8 lower:352/+16.1 upper:70/+22.9 second:46903/-4.2 cabinet:23765/+1.5 bowl:11678/+4.4 open:227655/-inf close:44545/-3.3
+[    83s]   first-order ranks at 'a' (of 59094; + side rank, - side rank = 59094-1-rank): top:0/+22.3 middle:59092/-60.0 bottom:56906/-32.9 lower:57977/-36.1 upper:39456/-21.5 second:20086/-17.5 cabinet:52843/-27.6 bowl:27444/-18.8 open:44381/-23.0 close:14894/-16.4
+[    83s]   first-order ranks at 'drawer' (of 59094; + side rank, - side rank = 59094-1-rank): top:2092/+18.5 middle:57371/-30.6 bottom:55665/-23.9 lower:50326/-14.5 upper:12386/+7.8 second:35959/-3.8 cabinet:58641/-42.4 bowl:75/+34.8 open:20691/+3.5 close:42693/-7.6
+[    83s]   verifying 1505 prompts
+
+  t 0: 1505 verified, 331 with |align| >= 0.5. Top of each side (shift cm, move, align, lambda):
+       14.75   18.12  0.81   1.03  open the top drawer [ins]
+       14.59   17.82  0.82   1.03  open top drawer [sub]
+       14.54   17.62  0.83   1.02  top a drawer [sub]
+       14.40   17.78  0.81   1.02  open a top drawer [key]
+       12.96   18.98  0.68   1.00  open the top drawer and put the bowl inside [ref]
+       10.98   17.05  0.64   1.04  open a bowl drawer [key]
+       10.91   18.53  0.59   1.05  open the bowl drawer [ins]
+        5.34    9.81  0.54   0.90  smtplib a drawer [sub]
+        4.97    9.23  0.54   0.93  unlaw a drawer [sub]
+        4.60    7.48  0.61   0.93  open the quelcon drawer [ins]
+        4.12    6.89  0.60   0.92  open the thereupon drawer [ins]
+       -0.59    0.99 -0.60   0.85  open its drawer [sub]
+    ...
+     -126.88  236.10 -0.54  -0.74  open a plak [sub]
+     -127.07  237.31 -0.54  -0.74  open a fasc [sub]
+     -127.07  236.04 -0.54  -0.75  open a hek [sub]
+     -127.23  235.46 -0.54  -0.74  open a glan [sub]
+     -127.25  236.52 -0.54  -0.73  open a siff [sub]
+     -127.33  238.65 -0.53  -0.75  open a cyr [sub]
+     -127.42  234.00 -0.54  -0.75  open a kram [sub]
+     -127.49  235.89 -0.54  -0.75  open a aquare [sub]
+     -127.73  234.01 -0.55  -0.75  open a lele [sub]
+     -127.78  234.85 -0.54  -0.73  open a lende [sub]
+     -127.79  234.51 -0.54  -0.74  open a anse [sub]
+     -127.91  239.74 -0.53  -0.75  open a sopr [sub]
+  key prompts:
+       14.40   17.78  0.81   1.02  open a top drawer
+       12.96   18.98  0.68   1.00  open the top drawer and put the bowl inside
+       10.98   17.05  0.64   1.04  open a bowl drawer
+       -8.30   19.97 -0.42   0.68  open the open drawer
+      -13.83   31.73 -0.44   0.55  open a open drawer
+      -21.21   49.98 -0.42   0.35  open the close drawer
+      -24.53   54.36 -0.45   0.29  open a close drawer
+      -25.05   56.30 -0.44   0.27  open the second drawer
+      -25.89   57.67 -0.45   0.25  open the upper drawer
+      -27.39   59.60 -0.46   0.22  open a upper drawer
+      -28.98   61.56 -0.47   0.20  open a second drawer
+      -30.62   64.21 -0.48   0.16  open the lower drawer
+      -32.27   66.03 -0.49   0.14  open a lower drawer
+      -33.71   68.33 -0.49   0.11  open the bottom drawer
+      -35.37   70.35 -0.50   0.08  open a bottom drawer
+      -35.69   68.15 -0.52   0.10  open the cabinet drawer
+      -35.87   68.50 -0.52   0.10  open a cabinet drawer
+      -41.16   77.02 -0.53  -0.00  open a middle drawer
+      -41.95   76.78 -0.55   0.00  open the middle drawer of the cabinet
+
+[   411s]   clusters by final eef: sizes [6, 10], centres (cm) [12.7, 5.4, -2.0] vs [19.1, -6.6, -9.8]; events [[], [], [], [], [], [], [], [('top drawer open', 53)], [], [], [('top drawer open', 54)], [], [], [], [], []]
+[   412s] t 10: clusters [6, 10], |Delta_branch| 28.5 cm, cos(cf) -0.04, lambda0 0.69
+[   412s]   first-order ranks at 'open' (of 59094; + side rank, - side rank = 59094-1-rank): top:59092/-25.5 middle:0/+15.1 bottom:56647/-6.0 lower:58046/-7.5 upper:58644/-9.0 second:5147/+1.4 cabinet:28053/-1.4 bowl:38859/-2.3 open:227655/-inf close:2991/+2.2
+[   412s]   first-order ranks at 'a' (of 59094; + side rank, - side rank = 59094-1-rank): top:59093/-13.2 middle:0/+20.4 bottom:7843/+8.3 lower:3737/+9.3 upper:26073/+6.4 second:37001/+5.5 cabinet:10669/+7.9 bowl:53484/+3.6 open:15826/+7.3 close:39567/+5.3
+[   412s]   first-order ranks at 'drawer' (of 59094; + side rank, - side rank = 59094-1-rank): top:52448/+22.9 middle:16393/+31.9 bottom:21945/+30.3 lower:31017/+28.2 upper:28784/+28.7 second:30660/+28.3 cabinet:2613/+40.3 bowl:59081/+9.0 open:49120/+24.1 close:38711/+26.6
+[   412s]   verifying 1509 prompts
+
+  t 10: 1509 verified, 174 with |align| >= 0.5. Top of each side (shift cm, move, align, lambda):
+       23.53   27.16  0.87   0.76  open the betweenstory drawer [ins]
+       16.41   21.40  0.77   0.78  open a paper [sub]
+       15.77   19.62  0.80   0.76  open a unspeak [sub]
+       14.66   17.17  0.85   0.74  open a hitch [sub]
+       13.89   16.70  0.83   0.74  open a sophistic [sub]
+       13.86   16.01  0.87   0.73  open a intrigu [sub]
+       13.78   16.74  0.82   0.74  open a ineffec [sub]
+       13.54   16.83  0.80   0.74  open a apprehen [sub]
+       13.51   16.62  0.81   0.73  open a bourgeo [sub]
+       13.30   17.12  0.78   0.73  open a vainly [sub]
+       12.68   14.92  0.85   0.69  open a unwarran [sub]
+       12.59   14.79  0.85   0.69  open a tolerably [sub]
+    ...
+        5.84    8.55  0.68   0.66  open the beaute drawer [ins]
+        5.82    9.79  0.59   0.64  footh a drawer [sub]
+        5.76   10.53  0.55   0.66  concier a drawer [sub]
+        5.75    9.93  0.58   0.64  open the infallib drawer [ins]
+        5.67   10.60  0.53   0.65  clergymen a drawer [sub]
+        5.44    8.53  0.64   0.67  endeavouring a drawer [sub]
+        5.43    9.59  0.57   0.65  superint a drawer [sub]
+        5.30   10.58  0.50   0.64  open a ghe [sub]
+        4.96    8.82  0.56   0.65  salutary a drawer [sub]
+        1.38    2.36  0.58   0.68  open the drawer [sub]
+       -7.72   15.28 -0.51   0.80  open a bowl drawer [key]
+      -22.90   43.37 -0.53   1.00  open the top drawer and put the bowl inside [ref]
+  key prompts:
+        0.28   12.18  0.02   0.59  open the open drawer
+       -1.82   22.07 -0.08   0.49  open a open drawer
+       -7.72   15.28 -0.51   0.80  open a bowl drawer
+       -9.29   50.24 -0.18   0.23  open the close drawer
+      -12.12   53.56 -0.23   0.20  open a close drawer
+      -16.10   36.57 -0.44   0.98  open a top drawer
+      -17.48   61.10 -0.29   0.13  open the second drawer
+      -17.58   60.11 -0.29   0.14  open the upper drawer
+      -17.95   60.10 -0.30   0.14  open a upper drawer
+      -18.74   62.12 -0.30   0.12  open a second drawer
+      -20.76   69.34 -0.30   0.05  open the cabinet drawer
+      -21.08   69.28 -0.30   0.05  open a cabinet drawer
+      -21.41   66.17 -0.32   0.09  open the lower drawer
+      -21.74   66.07 -0.33   0.09  open a lower drawer
+      -22.90   43.37 -0.53   1.00  open the top drawer and put the bowl inside
+      -23.70   69.56 -0.34   0.06  open the bottom drawer
+      -24.25   70.08 -0.35   0.06  open a bottom drawer
+      -26.98   77.11 -0.35  -0.00  open the middle drawer of the cabinet
+      -28.09   76.33 -0.37   0.01  open a middle drawer
+

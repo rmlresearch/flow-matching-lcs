@@ -1,0 +1,45 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    57s] states kept: [46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70]
+[    61s] t 46: s1 5.9 (1 iter 5.9, |cos| 1.00); jump fresh4 149 fresh1 149  (5s)
+[    66s] t 47: s1 3.8 (1 iter 3.8, |cos| 0.99); jump fresh4 89 fresh1 87  (5s)
+[    70s] t 48: s1 4.6 (1 iter 4.5, |cos| 1.00); jump fresh4 122 fresh1 117  (5s)
+[    75s] t 49: s1 10.7 (1 iter 10.7, |cos| 1.00); jump fresh4 151 fresh1 151  (5s)
+[    88s] t 50: s1 15.5 (1 iter 15.5, |cos| 1.00); jump fresh4 143 fresh1 143 t50 143 | hold fresh4+: stove/stove  fresh4-: plate/plate  t50+: stove/stove  t50-: plate/plate  (13s)
+[   101s] t 51: s1 16.7 (1 iter 16.7, |cos| 1.00); jump fresh4 118 fresh1 119 t50 119; |cos(v1, v1(t50))| 0.96 | hold fresh4+: stove/stove  fresh4-: plate/plate  t50+: stove/stove  t50-: plate/plate  (13s)
+[   114s] t 52: s1 2.4 (1 iter 2.3, |cos| 0.93); jump fresh4 73 fresh1 43 t50 25; |cos(v1, v1(t50))| 0.73 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: plate/plate  t50-: plate/plate  (13s)
+[   126s] t 53: s1 10.5 (1 iter 10.5, |cos| 1.00); jump fresh4 137 fresh1 137 t50 119; |cos(v1, v1(t50))| 0.70 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: stove/stove  t50-: plate/plate  (12s)
+[   139s] t 54: s1 3.2 (1 iter 3.0, |cos| 0.94); jump fresh4 116 fresh1 106 t50 74; |cos(v1, v1(t50))| 0.57 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: plate/plate  t50-: plate/plate  (13s)
+[   152s] t 55: s1 2.9 (1 iter 2.8, |cos| 0.94); jump fresh4 100 fresh1 71 t50 48; |cos(v1, v1(t50))| 0.48 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: plate/plate  t50-: plate/plate  (13s)
+[   164s] t 56: s1 2.7 (1 iter 2.5, |cos| 0.91); jump fresh4 112 fresh1 79 t50 72; |cos(v1, v1(t50))| 0.48 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: plate/plate  t50-: plate/plate  (13s)
+[   176s] t 57: s1 2.0 (1 iter 2.0, |cos| 0.95); jump fresh4 22 fresh1 17 t50 11; |cos(v1, v1(t50))| 0.35 | hold fresh4+: plate/plate  fresh4-: plate/plate  t50+: plate/plate  t50-: plate/plate  (12s)
+[   189s] t 58: s1 5.0 (1 iter 5.0, |cos| 0.97); jump fresh4 25 fresh1 29 t50 70; |cos(v1, v1(t50))| 0.17 | hold fresh4+: plate/plate  fresh4-: plate/plate  t50+: plate/plate  t50-: plate/plate  (12s)
+[   200s] t 59: s1 11.8 (1 iter 11.7, |cos| 0.99); jump fresh4 139 fresh1 138 t50 120; |cos(v1, v1(t50))| 0.56 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: stove/stove  t50-: plate/plate  (12s)
+[   213s] t 60: s1 9.2 (1 iter 9.1, |cos| 0.99); jump fresh4 147 fresh1 147 t50 127 t60 147; |cos(v1, v1(t50))| 0.53 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: stove/stove  t50-: plate/plate  (12s)
+[   226s] t 61: s1 4.3 (1 iter 3.9, |cos| 0.89); jump fresh4 70 fresh1 51 t50 27 t60 72; |cos(v1, v1(t50))| 0.52 | hold fresh4+: plate/plate  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (13s)
+[   238s] t 62: s1 2.4 (1 iter 1.8, |cos| 0.64); jump fresh4 22 fresh1 17 t50 12 t60 24; |cos(v1, v1(t50))| 0.11 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (12s)
+[   250s] t 63: s1 1.3 (1 iter 1.1, |cos| 0.79); jump fresh4 15 fresh1 11 t50 7 t60 13; |cos(v1, v1(t50))| 0.39 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (12s)
+[   262s] t 64: s1 2.3 (1 iter 1.1, |cos| 0.33); jump fresh4 22 fresh1 12 t50 5 t60 10; |cos(v1, v1(t50))| 0.11 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (12s)
+[   274s] t 65: s1 2.3 (1 iter 1.9, |cos| 0.84); jump fresh4 21 fresh1 19 t50 6 t60 8; |cos(v1, v1(t50))| 0.14 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (12s)
+[   286s] t 66: s1 1.9 (1 iter 1.7, |cos| 0.88); jump fresh4 19 fresh1 18 t50 6 t60 8; |cos(v1, v1(t50))| 0.03 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (12s)
+[   296s] t 67: s1 4.2 (1 iter 4.2, |cos| 0.99); jump fresh4 12 fresh1 11 t50 5 t60 6; |cos(v1, v1(t50))| 0.34 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (10s)
+[   306s] t 68: s1 1.5 (1 iter 1.4, |cos| 0.84); jump fresh4 16 fresh1 15 t50 2 t60 5; |cos(v1, v1(t50))| 0.07 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (10s)
+[   316s] t 69: s1 1.4 (1 iter 1.1, |cos| 0.72); jump fresh4 16 fresh1 13 t50 3 t60 5; |cos(v1, v1(t50))| 0.11 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (10s)
+[   325s] t 70: s1 1.4 (1 iter 1.2, |cos| 0.79); jump fresh4 16 fresh1 14 t50 4 t60 5; |cos(v1, v1(t50))| 0.03 | hold fresh4+: stove/stove  fresh4-: stove/stove  t50+: stove/stove  t50-: stove/stove  (10s)

@@ -1,0 +1,39 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[    52s] |emb(top)| 220.61 |emb(middle)| 238.64 |emb(a)| 216.12 |top-middle| 111.83 |a-top| 109.73 |a-middle| 126.82
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    60s] init 0: |plan(top) - plan(middle)| 67.6 cm; lambda along s (0 = top, 1 = middle):
+   s:      -0.50 -0.40 -0.30 -0.20 -0.10  0.00  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00  1.10  1.20  1.30  1.40  1.50
+   lambda:  1.01  1.02  1.02  1.02  1.01  1.00  0.92  0.62  0.26  0.17  0.12  0.07  0.04  0.02  0.01  0.00 -0.01 -0.01 -0.02 -0.02 -0.03
+   steepest step 4.43 per unit s at s 0.20-0.25 (a ramp would be ~1); 'open a [a] drawer' lambda 0.10
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    67s] init 1: |plan(top) - plan(middle)| 75.5 cm; lambda along s (0 = top, 1 = middle):
+   s:      -0.50 -0.40 -0.30 -0.20 -0.10  0.00  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00  1.10  1.20  1.30  1.40  1.50
+   lambda:  1.01  1.01  1.01  1.01  1.01  1.00  0.98  0.87  0.41  0.19  0.10  0.05  0.03  0.02  0.01  0.00 -0.00 -0.01 -0.01 -0.01 -0.01
+   steepest step 5.49 per unit s at s 0.25-0.30 (a ramp would be ~1); 'open a [a] drawer' lambda 0.10
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    74s] init 2: |plan(top) - plan(middle)| 74.2 cm; lambda along s (0 = top, 1 = middle):
+   s:      -0.50 -0.40 -0.30 -0.20 -0.10  0.00  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00  1.10  1.20  1.30  1.40  1.50
+   lambda:  0.99  1.00  1.00  1.00  1.00  1.00  0.99  0.98  0.90  0.58  0.18  0.10  0.05  0.03  0.01  0.00 -0.01 -0.01 -0.01 -0.01 -0.01
+   steepest step 6.13 per unit s at s 0.40-0.45 (a ramp would be ~1); 'open a [a] drawer' lambda 0.19
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[    82s] init 3: |plan(top) - plan(middle)| 91.1 cm; lambda along s (0 = top, 1 = middle):
+   s:      -0.50 -0.40 -0.30 -0.20 -0.10  0.00  0.10  0.20  0.30  0.40  0.50  0.60  0.70  0.80  0.90  1.00  1.10  1.20  1.30  1.40  1.50
+   lambda:  0.99  0.99  0.99  0.99  1.00  1.00  1.00  1.00  1.00  0.95  0.36  0.13  0.04  0.02  0.00  0.00 -0.00 -0.00 -0.00  0.00  0.00
+   steepest step 8.56 per unit s at s 0.45-0.50 (a ramp would be ~1); 'open a [a] drawer' lambda 0.61

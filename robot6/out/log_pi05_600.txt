@@ -1,0 +1,31 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: minhwantttt/pi05-pusht-chunk16
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[    6s] ep 0 seed 1000: success True max coverage 0.96 steps 155
+[   12s] ep 1 seed 1001: success True max coverage 0.96 steps 162
+[   17s] ep 2 seed 1002: success True max coverage 0.98 steps 122
+[   23s] ep 3 seed 1003: success True max coverage 0.96 steps 173
+[   28s] ep 4 seed 1004: success True max coverage 0.96 steps 144
+[   34s] ep 5 seed 1005: success True max coverage 0.95 steps 162
+[   50s] ep 6 seed 1006: success True max coverage 0.95 steps 446
+[   57s] ep 7 seed 1007: success True max coverage 0.96 steps 192
+[   64s] ep 8 seed 1008: success True max coverage 0.96 steps 184
+[   77s] ep 9 seed 1009: success True max coverage 0.98 steps 361
+[   82s] ep 10 seed 1010: success True max coverage 0.95 steps 117
+[   91s] ep 11 seed 1011: success True max coverage 0.95 steps 235
+[  100s] ep 12 seed 1012: success True max coverage 0.97 steps 259
+[  122s] ep 13 seed 1013: success False max coverage 0.94 steps 600
+[  144s] ep 14 seed 1014: success False max coverage 0.94 steps 600
+[  148s] ep 15 seed 1015: success True max coverage 0.95 steps 117
+[  170s] ep 16 seed 1016: success False max coverage 0.95 steps 600
+[  192s] ep 17 seed 1017: success False max coverage 0.94 steps 600
+[  202s] ep 18 seed 1018: success True max coverage 0.95 steps 273
+[  210s] ep 19 seed 1019: success True max coverage 0.97 steps 214
+n_exec 8: success 0.80, mean max coverage 0.96

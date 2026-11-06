@@ -1,0 +1,82 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[    53s] dictionary pieces 27221
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    81s] t 0: clusters [8, 8], mode separation over 50 steps 14.1 cm, within-mode spread 4.5 cm
+[    82s]   plan under 'open a drawer': distance to mode 0 / 1: 43.2 / 44.1 cm
+[    82s]   'open': + ['top', 'base', 'bad', 'tolerably', 'quitted', 'cap']  - ['franz', 'middle', 'baum', 'regina', 'croce', 'bandana']
+[    82s]   'a': + ['top', 'the', 'it', 'SCOTT', 'rials', 'uber']  - ['middle', 'teri', 'lii', 'faa', 'minn', 'mao']
+[    82s]   'drawer': + ['funnel', 'peel', 'balm', 'bronchial', 'vial', 'refrigerator']  - ['baum', 'norman', 'borg', 'tempe', 'berger', 'leger']
+
+  t 0: 62 candidates. toward = (dist to mode 1 - dist to mode 0) / separation; near = dist to the nearer mode
+     toward   near   move    f.o.  text
+       0.33   50.8   18.1    22.3  open the top drawer [+ins]
+       0.32   50.7   17.6    67.2  top a drawer [+sub]
+       0.32   50.9   17.8    22.3  open top drawer [+sub]
+       0.30   49.3   19.0     nan  open the top drawer and put the bowl inside [refref]
+       0.07   42.7    5.7    27.5  cap a drawer [+sub]
+       0.07   42.9    4.2    39.5  open the bronchial drawer [+ins]
+       0.07   43.3    1.4     3.7  open the drawer [+sub]
+       0.06   42.8    1.4     0.2  open it drawer [+sub]
+       0.06   42.0    2.1     0.2  open the it drawer [+ins]
+       0.05   40.7    3.4     3.7  open the the drawer [+ins]
+    ...
+      -0.70   21.1   46.4   -48.2  open the mao drawer [-ins]
+      -0.70   18.8   45.3     nan  open SCOTT drawer [+sub]
+      -0.70   24.5   50.8   -28.1  bandana a drawer [-sub]
+      -0.70   22.5   52.1   -50.5  open the teri drawer [-ins]
+      -0.71   22.0   50.5   -48.2  open mao drawer [-sub]
+      -0.72   18.6   45.7    42.3  open the peel drawer [+ins]
+      -0.72   20.6   47.8    37.6  open the refrigerator drawer [+ins]
+      -0.72   21.7   49.7   -61.3  open the borg drawer [-ins]
+      -0.72   27.0   56.2     nan  open rials drawer [+sub]
+      -0.74   20.5   48.6     nan  open the rials drawer [+ins]
+[   109s]   suggestion for mode 0: 'open the SCOTT drawer' (plan 26.9 cm from mode 0, 18.7 from the other); re-branched 8x: lands in mode 0 / 1 = [0, 8]
+[   122s]   suggestion for mode 1: 'open the balm drawer' (plan 17.7 cm from mode 1, 27.5 from the other); re-branched 8x: lands in mode 0 / 1 = [0, 8]
+[   149s] t 10: clusters [6, 10], mode separation over 50 steps 28.5 cm, within-mode spread 7.6 cm
+[   150s]   plan under 'open a drawer': distance to mode 0 / 1: 64.5 / 53.5 cm
+[   150s]   'open': + ['top', 'gaily', 'tolerably', 'withal', 'negroes', 'quitted']  - ['middle', 'franz', 'pickle', 'bandana', 'baum', 'seasonings']
+[   150s]   'a': + ['top', 'decker', 'spatula', 'it', 'exportation', 'zipper']  - ['middle', 'minn', 'surabaya', 'bandung', 'xxvi', 'xxiii']
+[   150s]   'drawer': + ['unused9>', 'unused10>', 'unused11>', 'unused12>', 'unused13>', 'unused14>']  - ['tempe', 'gaily', 'norman', 'sherds', 'sophie', 'ricardo']
+
+  t 10: 62 candidates. toward = (dist to mode 1 - dist to mode 0) / separation; near = dist to the nearer mode
+     toward   near   move    f.o.  text
+       0.09   54.8   76.1   -20.4  open the middle drawer [-ins]
+       0.09   55.1   76.0   -20.4  open middle drawer [-sub]
+       0.09   56.0   75.2   -15.1  middle a drawer [-sub]
+       0.08   54.6   77.1     nan  open the middle drawer of the cabinet [refref]
+       0.00   83.6   43.4     nan  open the top drawer and put the bowl inside [refref]
+      -0.08   80.4   36.1    13.2  open top drawer [+sub]
+      -0.08   80.9   36.6    13.2  open the top drawer [+ins]
+      -0.09   81.5   36.6    25.5  top a drawer [+sub]
+      -0.20  112.6   66.0     nan  open a unused9> [+sub]
+      -0.21   35.6   58.3    -7.9  seasonings a drawer [-sub]
+    ...
+      -0.55   29.9   37.3   -13.9  open xxvi drawer [-sub]
+      -0.55   27.1   43.4     nan  open the unused11> drawer [+ins]
+      -0.55   32.6   34.1   -57.1  open the sophie drawer [-ins]
+      -0.55   37.6   25.0   -57.2  open the norman drawer [-ins]
+      -0.56   27.0   41.2     3.6  open decker drawer [+sub]
+      -0.56   27.4   41.9     nan  open the unused14> drawer [+ins]
+      -0.57   41.3   19.0   -59.7  open a tempe [-sub]
+      -0.59   31.6   32.3    -9.4  pickle a drawer [-sub]
+      -0.59   41.0   22.3   -57.2  open the sherds drawer [-ins]
+      -0.60   31.1   33.8   -55.9  open the ricardo drawer [-ins]
+[   177s]   suggestion for mode 0: 'open the decker drawer' (plan 40.3 cm from mode 0, 28.2 from the other); re-branched 8x: lands in mode 0 / 1 = [0, 8]
+[   190s]   suggestion for mode 1: 'open decker drawer' (plan 27.0 cm from mode 1, 42.9 from the other); re-branched 8x: lands in mode 0 / 1 = [0, 8]

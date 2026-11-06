@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    56s] bodies: ['akita_black_bowl_1', 'plate_1', 'flat_stove_1']
+[    88s] t 40: sigma1 1.2 jump 15 cm | eef [-11.3, 4.1, 92.0] grip None bowl [-8.6, 0.5, 89.8] plate [5.1, -1.0, 90.3] stove [-40.4, 20.2, 90.5]
+[    88s]    plan ends (world cm): exec [1.5, 3.2, 99.7] base [0.8, 3.6, 99.1] + [0.9, 3.8, 100.4] - [0.6, 3.5, 98.1]  exec toward +0.68
+[    88s]    decode: + 'otto the bowl' (+0.86)  - 'move the plates' (-0.98)
+[    88s]    side rollouts: + [('bowl->stove', 83), ('bowl->stove', 83), ('bowl->stove', 84)]  - [('bowl->stove', 83), ('bowl->plate', 78), ('bowl->plate', 79)]  base [('bowl->stove', 83), ('bowl->stove', 86), ('bowl->stove', 86)]  (31s)
+[   118s] t 50: sigma1 15.5 jump 143 cm | eef [-10.8, 4.1, 95.0] grip None bowl [-9.6, 0.0, 92.4] plate [5.1, -1.0, 90.3] stove [-40.4, 20.2, 90.5]
+[   118s]    plan ends (world cm): exec [-10.4, 14.8, 103.2] base [-9.6, 14.5, 102.9] + [-14.2, 18.6, 103.6] - [0.8, 2.5, 103.3]  exec toward +0.51
+[   118s]    decode: + 'transparent the bowl' (+0.98)  - 'coordinate the bowl' (-0.97)
+[   118s]    side rollouts: + [('bowl->stove', 83), ('bowl->stove', 84), ('bowl->stove', 83)]  - [('bowl->plate', 77), ('bowl->plate', 78), ('bowl->plate', 77)]  base [('bowl->stove', 86), ('bowl->stove', 86), ('bowl->stove', 85)]  (29s)
+[   144s] t 60: sigma1 9.2 jump 147 cm | eef [-10.6, 7.8, 105.3] grip None bowl [-10.4, 3.7, 102.1] plate [5.1, -1.0, 90.3] stove [-40.4, 20.2, 90.5]
+[   144s]    plan ends (world cm): exec [-11.0, 19.8, 103.9] base [-11.0, 20.1, 103.7] + [-0.4, 6.2, 103.5] - [-13.9, 22.9, 105.5]  exec toward -0.63
+[   144s]    decode: + 'move the bowl plates' (+0.98)  - 'move the bowl black' (-0.99)
+[   144s]    side rollouts: + [('bowl->plate', 88), ('bowl->plate', 87), ('bowl->plate', 89)]  - [('bowl->stove', 86), ('bowl->stove', 86), ('bowl->stove', 86)]  base [('bowl->stove', 86), ('bowl->stove', 87), ('bowl->stove', 86)]  (26s)

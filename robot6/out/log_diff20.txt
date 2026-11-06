@@ -1,0 +1,23 @@
+WARNING:root:Unexpected key(s) when loading model: ['normalize_inputs.buffer_observation_image.mean', 'normalize_inputs.buffer_observation_image.std', 'normalize_inputs.buffer_observation_state.max', 'normalize_inputs.buffer_observation_state.min', 'normalize_targets.buffer_action.max', 'normalize_targets.buffer_action.min', 'unnormalize_outputs.buffer_action.max', 'unnormalize_outputs.buffer_action.min']
+Loading weights from local directory
+ep 0: success False max coverage 0.95 steps 300
+ep 1: success False max coverage 0.93 steps 300
+ep 2: success True max coverage 0.95 steps 217
+ep 3: success True max coverage 0.96 steps 123
+ep 4: success True max coverage 0.97 steps 224
+ep 5: success True max coverage 0.96 steps 228
+ep 6: success False max coverage 0.94 steps 300
+ep 7: success True max coverage 0.96 steps 152
+ep 8: success True max coverage 0.96 steps 200
+ep 9: success True max coverage 0.97 steps 160
+ep 10: success True max coverage 0.96 steps 215
+ep 11: success False max coverage 0.95 steps 300
+ep 12: success False max coverage 0.92 steps 300
+ep 13: success True max coverage 0.97 steps 128
+ep 14: success False max coverage 0.93 steps 300
+ep 15: success True max coverage 0.95 steps 132
+ep 16: success True max coverage 0.97 steps 88
+ep 17: success True max coverage 0.97 steps 239
+ep 18: success False max coverage 0.69 steps 300
+ep 19: success False max coverage 0.94 steps 300
+diffusion_pusht success 0.60, mean max coverage 0.940, DP-paper score (mean min(cov/0.95, 1)) 0.981

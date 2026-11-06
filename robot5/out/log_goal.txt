@@ -1,0 +1,245 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[   112s] init 0: open the middle drawer: 0.5cm bc 0.26 | put the bowl on the st: 0.5cm bc 0.38 | put the wine bottle on: 0.7cm bc 0.34 | open the top drawer an: 0.7cm bc 0.35 | put the bowl on top of: 0.7cm bc 0.29 | push the plate to the : 0.6cm bc 0.37 ...
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   168s] init 1: open the middle drawer: 0.5cm bc 0.24 | put the bowl on the st: 0.5cm bc 0.37 | put the wine bottle on: 0.9cm bc 0.32 | open the top drawer an: 0.8cm bc 0.38 | put the bowl on top of: 0.8cm bc 0.36 | push the plate to the : 0.6cm bc 0.36 ...
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   223s] init 2: open the middle drawer: 0.5cm bc 0.27 | put the bowl on the st: 0.6cm bc 0.39 | put the wine bottle on: 0.8cm bc 0.34 | open the top drawer an: 0.7cm bc 0.38 | put the bowl on top of: 0.6cm bc 0.33 | push the plate to the : 0.5cm bc 0.38 ...
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[   280s] init 3: open the middle drawer: 0.5cm bc 0.24 | put the bowl on the st: 0.5cm bc 0.40 | put the wine bottle on: 0.8cm bc 0.39 | open the top drawer an: 0.7cm bc 0.37 | put the bowl on top of: 0.6cm bc 0.40 | push the plate to the : 0.5cm bc 0.37 ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[    61s] 136 batches of 8 episodes
+[    87s] batch 1/136 'open the middle drawer of the cabinet' seeds 0-1: middle drawer@118, bottom drawer open@300, middle drawer@120, middle drawer@135, middle drawer@123, bottom drawer open@300, middle drawer@113, middle drawer@124
+[   114s] batch 2/136 'open the middle drawer of the cabinet' seeds 2-3: middle drawer@140, bottom drawer open@300, middle drawer@114, middle drawer@145, middle drawer@125, bottom drawer open@300, middle drawer@108, middle drawer@134
+[   142s] batch 3/136 'open the middle drawer of the cabinet' seeds 4-5: middle drawer@148, bottom drawer open@300, middle drawer@120, middle drawer@135, middle drawer@130, bottom drawer open@300, middle drawer@114, middle drawer@139
+[   169s] batch 4/136 'open the middle drawer of the cabinet' seeds 6-7: middle drawer@131, bottom drawer open@300, middle drawer@116, middle drawer@143, middle drawer@127, bottom drawer open@300, middle drawer@118, middle drawer@126
+[   183s] batch 5/136 'put the bowl on the stove' seeds 0-1: bowl->stove@82, bowl->stove@84, bowl->stove@81, bowl->stove@79, bowl->stove@82, bowl->stove@82, bowl->stove@80, bowl->stove@80
+[   196s] batch 6/136 'put the bowl on the stove' seeds 2-3: bowl->stove@81, bowl->stove@81, bowl->stove@80, bowl->stove@79, bowl->stove@80, bowl->stove@84, bowl->stove@80, bowl->stove@79
+[   215s] batch 7/136 'put the bowl on the stove' seeds 4-5: bowl->stove@81, bowl->stove@83, bowl->stove@79, bowl->stove@79, bowl->stove@82, bowl->stove@85, bowl->stove@81, none@300
+[   229s] batch 8/136 'put the bowl on the stove' seeds 6-7: bowl->stove@82, bowl->stove@85, bowl->stove@81, bowl->stove@79, bowl->stove@82, bowl->stove@85, bowl->stove@82, bowl->stove@78
+[   243s] batch 9/136 'put the wine bottle on top of the cabinet' seeds 0-1: bottle->cabinet top@94, bottle->cabinet top@83, bottle->cabinet top@80, bottle->cabinet top@91, bottle->cabinet top@96, bottle->cabinet top@83, bottle->cabinet top@79, bottle->cabinet top@91
+[   257s] batch 10/136 'put the wine bottle on top of the cabinet' seeds 2-3: bottle->cabinet top@90, bottle->cabinet top@85, bottle->cabinet top@80, bottle->cabinet top@91, bottle->cabinet top@89, bottle->cabinet top@85, bottle->cabinet top@80, bottle->cabinet top@92
+[   271s] batch 11/136 'put the wine bottle on top of the cabinet' seeds 4-5: bottle->cabinet top@97, bottle->cabinet top@85, bottle->cabinet top@80, bottle->cabinet top@89, bottle->cabinet top@92, bottle->cabinet top@86, bottle->cabinet top@79, bottle->cabinet top@89
+[   285s] batch 12/136 'put the wine bottle on top of the cabinet' seeds 6-7: bottle->cabinet top@96, bottle->cabinet top@86, bottle->cabinet top@80, bottle->cabinet top@90, bottle->cabinet top@96, bottle->cabinet top@86, bottle->cabinet top@80, bottle->cabinet top@97
+[   316s] batch 13/136 'open the top drawer and put the bowl inside' seeds 0-1: bowl->top drawer@180, bowl->top drawer@176, bowl->top drawer@222, bowl->top drawer@176, bowl->top drawer@249, bowl->top drawer@178, bowl->top drawer@196, bowl->top drawer@246
+[   348s] batch 14/136 'open the top drawer and put the bowl inside' seeds 2-3: bowl->top drawer@175, bowl->top drawer@175, bowl->top drawer@224, bowl->top drawer@225, bowl->top drawer@192, bowl->top drawer@174, bowl->top drawer@243, bowl->top drawer@231
+[   380s] batch 15/136 'open the top drawer and put the bowl inside' seeds 4-5: bowl->top drawer@177, bowl->top drawer@172, bowl->cabinet top@232, bowl->top drawer@238, bowl->top drawer@198, bowl->top drawer@177, bowl->top drawer@252, bowl->top drawer@180
+[   412s] batch 16/136 'open the top drawer and put the bowl inside' seeds 6-7: bowl->top drawer@179, bowl->top drawer@171, bowl->top drawer@235, bowl->top drawer@234, bowl->top drawer@194, bowl->top drawer@175, bowl->top drawer@203, bowl->top drawer@239
+[   425s] batch 17/136 'put the bowl on top of the cabinet' seeds 0-1: bowl->cabinet top@81, bowl->cabinet top@84, bowl->cabinet top@83, bowl->cabinet top@80, bowl->cabinet top@80, bowl->cabinet top@85, bowl->cabinet top@87, bowl->cabinet top@80
+[   439s] batch 18/136 'put the bowl on top of the cabinet' seeds 2-3: bowl->cabinet top@78, bowl->cabinet top@84, bowl->cabinet top@90, bowl->cabinet top@84, bowl->cabinet top@82, bowl->cabinet top@85, bowl->cabinet top@88, bowl->cabinet top@81
+[   452s] batch 19/136 'put the bowl on top of the cabinet' seeds 4-5: bowl->cabinet top@81, bowl->cabinet top@84, bowl->cabinet top@84, bowl->cabinet top@82, bowl->cabinet top@79, bowl->cabinet top@84, bowl->cabinet top@88, bowl->cabinet top@83
+[   466s] batch 20/136 'put the bowl on top of the cabinet' seeds 6-7: bowl->cabinet top@81, bowl->cabinet top@85, bowl->cabinet top@88, bowl->cabinet top@81, bowl->cabinet top@78, bowl->cabinet top@85, bowl->cabinet top@87, bowl->cabinet top@80
+[   485s] batch 21/136 'push the plate to the front of the stove' seeds 0-1: plate->stove front@114, plate->stove front@129, plate->stove front@125, plate->stove front@124, plate->stove front@115, plate->stove front@122, plate->stove front@123, plate->stove front@123
+[   505s] batch 22/136 'push the plate to the front of the stove' seeds 2-3: plate->stove front@113, plate->stove front@126, plate->stove front@124, plate->stove front@120, plate->stove front@152, plate->stove front@125, plate->stove front@122, plate->stove front@123
+[   524s] batch 23/136 'push the plate to the front of the stove' seeds 4-5: plate->stove front@115, plate->stove front@126, plate->stove front@125, plate->stove front@121, plate->stove front@118, plate->stove front@127, plate->stove front@126, plate->stove front@128
+[   544s] batch 24/136 'push the plate to the front of the stove' seeds 6-7: plate->stove front@114, plate->stove front@127, plate->stove front@124, plate->stove front@123, plate->stove front@114, plate->stove front@127, plate->stove front@125, plate->stove front@124
+[   557s] batch 25/136 'put the cream cheese in the bowl' seeds 0-1: cheese->bowl@87, cheese->bowl@90, cheese->bowl@83, cheese->bowl@86, cheese->bowl@86, cheese->bowl@88, cheese->bowl@87, cheese->bowl@85
+[   571s] batch 26/136 'put the cream cheese in the bowl' seeds 2-3: cheese->bowl@85, cheese->bowl@91, cheese->bowl@90, cheese->bowl@79, cheese->bowl@87, cheese->bowl@87, cheese->bowl@87, cheese->bowl@80
+[   584s] batch 27/136 'put the cream cheese in the bowl' seeds 4-5: cheese->bowl@85, cheese->bowl@89, cheese->bowl@87, cheese->bowl@86, cheese->bowl@86, cheese->bowl@89, cheese->bowl@89, cheese->bowl@78
+[   598s] batch 28/136 'put the cream cheese in the bowl' seeds 6-7: cheese->bowl@80, cheese->bowl@89, cheese->bowl@89, cheese->bowl@85, cheese->bowl@87, cheese->bowl@90, cheese->bowl@90, cheese->bowl@87
+[   610s] batch 29/136 'turn on the stove' seeds 0-1: stove on@72, stove on@74, stove on@100, stove on@68, stove on@74, stove on@72, stove on@95, stove on@70
+[   623s] batch 30/136 'turn on the stove' seeds 2-3: stove on@71, stove on@75, stove on@72, stove on@67, stove on@74, stove on@73, stove on@95, stove on@69
+[   635s] batch 31/136 'turn on the stove' seeds 4-5: stove on@74, stove on@71, stove on@94, stove on@67, stove on@73, stove on@71, stove on@72, stove on@69
+[   647s] batch 32/136 'turn on the stove' seeds 6-7: stove on@72, stove on@72, stove on@85, stove on@69, stove on@74, stove on@74, stove on@80, stove on@71
+[   661s] batch 33/136 'put the bowl on the plate' seeds 0-1: bowl->plate@70, bowl->plate@74, bowl->plate@69, bowl->plate@148, bowl->plate@72, bowl->plate@75, bowl->plate@74, bowl->plate@72
+[   673s] batch 34/136 'put the bowl on the plate' seeds 2-3: bowl->plate@71, bowl->plate@75, bowl->plate@74, bowl->plate@70, bowl->plate@70, bowl->plate@75, bowl->plate@74, bowl->plate@72
+[   685s] batch 35/136 'put the bowl on the plate' seeds 4-5: bowl->plate@69, bowl->plate@76, bowl->plate@70, bowl->plate@71, bowl->plate@71, bowl->plate@76, bowl->plate@75, bowl->plate@71
+[   701s] batch 36/136 'put the bowl on the plate' seeds 6-7: bowl->plate@201, bowl->plate@76, bowl->plate@73, bowl->plate@70, bowl->plate@72, bowl->plate@77, bowl->plate@75, bowl->plate@78
+[   722s] batch 37/136 'put the wine bottle on the rack' seeds 0-1: bottle->rack@148, bottle->rack@123, bottle->rack@136, bottle->rack@148, bottle->rack@138, bottle->rack@128, bottle->rack@130, bottle->rack@145
+[   746s] batch 38/136 'put the wine bottle on the rack' seeds 2-3: bottle->rack@249, bottle->rack@128, bottle->rack@127, bottle->rack@145, bottle->rack@146, bottle->rack@127, bottle->rack@130, bottle->rack@145
+[   768s] batch 39/136 'put the wine bottle on the rack' seeds 4-5: bottle->rack@155, bottle->rack@133, bottle->rack@141, bottle->rack@148, bottle->rack@152, bottle->rack@122, bottle->rack@138, bottle->rack@150
+[   789s] batch 40/136 'put the wine bottle on the rack' seeds 6-7: bottle->rack@143, bottle->rack@122, bottle->rack@128, bottle->rack@147, bottle->rack@146, bottle->rack@124, bottle->rack@130, bottle->rack@148
+[   816s] batch 41/136 'open the second drawer of the cabinet' seeds 0-1: middle drawer@126, bottom drawer open@300, middle drawer@107, middle drawer@134, middle drawer@125, bottom drawer open@300, middle drawer@109, middle drawer@127
+[   842s] batch 42/136 'open the second drawer of the cabinet' seeds 2-3: middle drawer@125, bottom drawer open@300, middle drawer@111, middle drawer@127, middle drawer@134, bottom drawer open@300, middle drawer@104, middle drawer@124
+[   869s] batch 43/136 'open the second drawer of the cabinet' seeds 4-5: middle drawer@126, bottom drawer open@300, middle drawer@111, middle drawer@121, middle drawer@144, bottom drawer open@300, middle drawer@105, middle drawer@120
+[   896s] batch 44/136 'open the second drawer of the cabinet' seeds 6-7: middle drawer@155, bottom drawer open@300, middle drawer@107, middle drawer@134, middle drawer@123, bottom drawer open@300, middle drawer@109, middle drawer@123
+[   923s] batch 45/136 'pull out the middle drawer' seeds 0-1: middle drawer@123, bottom drawer open@300, middle drawer@105, middle drawer@152, middle drawer@140, bottom drawer open@300, middle drawer@108, middle drawer@128
+[   953s] batch 46/136 'pull out the middle drawer' seeds 2-3: middle drawer@121, bottom drawer open@300, middle drawer@104, middle drawer@129, none@300, bottom drawer open@300, middle drawer@103, middle drawer@131
+[   979s] batch 47/136 'pull out the middle drawer' seeds 4-5: middle drawer@123, bottom drawer open@300, middle drawer@108, middle drawer@122, middle drawer@123, bottom drawer open@300, middle drawer@104, middle drawer@144
+[  1006s] batch 48/136 'pull out the middle drawer' seeds 6-7: middle drawer@132, bottom drawer open@300, middle drawer@112, middle drawer@121, middle drawer@125, bottom drawer open@300, middle drawer@103, middle drawer@128
+[  1019s] batch 49/136 'place the bowl on the stove' seeds 0-1: bowl->stove@80, bowl->stove@80, bowl->stove@80, bowl->stove@81, bowl->stove@80, bowl->stove@85, bowl->stove@81, bowl->stove@80
+[  1032s] batch 50/136 'place the bowl on the stove' seeds 2-3: bowl->stove@80, bowl->stove@82, bowl->stove@81, bowl->stove@80, bowl->stove@79, bowl->stove@84, bowl->stove@80, bowl->stove@81
+[  1052s] batch 51/136 'place the bowl on the stove' seeds 4-5: bowl->stove@81, bowl->stove@81, bowl->stove@176, bowl->stove@80, bowl->stove@81, bowl->stove@83, bowl->stove@81, none@300
+[  1066s] batch 52/136 'place the bowl on the stove' seeds 6-7: bowl->stove@80, bowl->stove@86, bowl->stove@81, bowl->stove@81, bowl->stove@80, bowl->stove@82, bowl->stove@82, bowl->stove@80
+[  1079s] batch 53/136 'put the bowl on the burner' seeds 0-1: bowl->stove@81, bowl->stove@80, bowl->stove@84, bowl->stove@79, bowl->stove@83, bowl->stove@80, bowl->stove@84, bowl->stove@83
+[  1092s] batch 54/136 'put the bowl on the burner' seeds 2-3: bowl->stove@83, bowl->stove@79, bowl->stove@80, bowl->stove@80, bowl->stove@83, bowl->stove@79, bowl->stove@81, bowl->stove@81
+[  1105s] batch 55/136 'put the bowl on the burner' seeds 4-5: bowl->stove@83, bowl->stove@79, bowl->stove@81, bowl->stove@81, bowl->stove@82, bowl->stove@80, bowl->stove@80, bowl->stove@83
+[  1118s] batch 56/136 'put the bowl on the burner' seeds 6-7: bowl->stove@83, bowl->stove@80, bowl->stove@81, bowl->stove@81, bowl->stove@82, bowl->stove@79, bowl->stove@72, bowl->stove@81
+[  1132s] batch 57/136 'put the bottle on top of the cabinet' seeds 0-1: bottle->cabinet top@90, bottle->cabinet top@84, bottle->cabinet top@78, bottle->cabinet top@94, bottle->cabinet top@92, bottle->cabinet top@83, bottle->cabinet top@77, bottle->cabinet top@92
+[  1146s] batch 58/136 'put the bottle on top of the cabinet' seeds 2-3: bottle->cabinet top@88, bottle->cabinet top@84, bottle->cabinet top@77, bottle->cabinet top@95, bottle->cabinet top@91, bottle->cabinet top@84, bottle->cabinet top@76, bottle->cabinet top@92
+[  1161s] batch 59/136 'put the bottle on top of the cabinet' seeds 4-5: bottle->cabinet top@89, bottle->cabinet top@85, bottle->cabinet top@78, bottle->cabinet top@91, bottle->cabinet top@89, bottle->cabinet top@85, bottle->cabinet top@77, bottle->cabinet top@92
+[  1175s] batch 60/136 'put the bottle on top of the cabinet' seeds 6-7: bottle->cabinet top@91, bottle->cabinet top@85, bottle->cabinet top@77, bottle->cabinet top@91, bottle->cabinet top@92, bottle->cabinet top@84, bottle->cabinet top@78, bottle->cabinet top@93
+[  1194s] batch 61/136 'push the plate towards the stove' seeds 0-1: plate->stove front@120, plate->stove front@128, plate->stove front@124, plate->stove front@123, plate->stove front@116, plate->stove front@124, plate->stove front@123, plate->stove front@122
+[  1213s] batch 62/136 'push the plate towards the stove' seeds 2-3: plate->stove front@123, plate->stove front@124, plate->stove front@125, plate->stove front@122, plate->stove front@123, plate->stove front@124, plate->stove front@124, plate->stove front@124
+[  1233s] batch 63/136 'push the plate towards the stove' seeds 4-5: plate->stove front@121, plate->stove front@127, plate->stove front@125, plate->stove front@122, plate->stove front@127, plate->stove front@127, plate->stove front@125, plate->stove front@124
+[  1252s] batch 64/136 'push the plate towards the stove' seeds 6-7: plate->stove front@126, plate->stove front@129, plate->stove front@126, plate->stove front@124, plate->stove front@115, plate->stove front@129, plate->stove front@126, plate->stove front@125
+[  1266s] batch 65/136 'put the cheese in the bowl' seeds 0-1: cheese->bowl@88, cheese->bowl@90, cheese->bowl@83, cheese->bowl@80, cheese->bowl@86, cheese->bowl@90, cheese->bowl@87, cheese->bowl@80
+[  1279s] batch 66/136 'put the cheese in the bowl' seeds 2-3: cheese->bowl@84, cheese->bowl@92, cheese->bowl@87, cheese->bowl@87, cheese->bowl@87, cheese->bowl@87, cheese->bowl@86, cheese->bowl@78
+[  1293s] batch 67/136 'put the cheese in the bowl' seeds 4-5: cheese->bowl@84, cheese->bowl@90, cheese->bowl@87, cheese->bowl@87, cheese->bowl@85, cheese->bowl@92, cheese->bowl@84, cheese->bowl@79
+[  1307s] batch 68/136 'put the cheese in the bowl' seeds 6-7: cheese->bowl@84, cheese->bowl@89, cheese->bowl@86, cheese->bowl@86, cheese->bowl@88, cheese->bowl@92, cheese->bowl@87, cheese->bowl@80
+[  1319s] batch 69/136 'switch on the stove' seeds 0-1: stove on@74, stove on@74, stove on@69, stove on@69, stove on@75, stove on@72, stove on@71, stove on@68
+[  1331s] batch 70/136 'switch on the stove' seeds 2-3: stove on@75, stove on@74, stove on@70, stove on@69, stove on@75, stove on@73, stove on@99, stove on@70
+[  1343s] batch 71/136 'switch on the stove' seeds 4-5: stove on@75, stove on@74, stove on@85, stove on@69, stove on@73, stove on@73, stove on@67, stove on@69
+[  1355s] batch 72/136 'switch on the stove' seeds 6-7: stove on@73, stove on@73, stove on@73, stove on@69, stove on@75, stove on@73, stove on@73, stove on@69
+[  1367s] batch 73/136 'place the bowl onto the plate' seeds 0-1: bowl->plate@73, bowl->plate@76, bowl->plate@73, bowl->plate@72, bowl->plate@71, bowl->plate@76, bowl->plate@75, bowl->plate@72
+[  1379s] batch 74/136 'place the bowl onto the plate' seeds 2-3: bowl->plate@73, bowl->plate@76, bowl->plate@74, bowl->plate@72, bowl->plate@71, bowl->plate@75, bowl->plate@75, bowl->plate@73
+[  1391s] batch 75/136 'place the bowl onto the plate' seeds 4-5: bowl->plate@71, bowl->plate@76, bowl->plate@75, bowl->plate@71, bowl->plate@71, bowl->plate@75, bowl->plate@74, bowl->plate@72
+[  1407s] batch 76/136 'place the bowl onto the plate' seeds 6-7: bowl->plate@71, bowl->plate@74, bowl->plate@74, cheese->plate@202, bowl->plate@75, bowl->plate@78, bowl->plate@76, bowl->plate@74
+[  1428s] batch 77/136 'put the wine bottle in the rack' seeds 0-1: bottle->rack@153, bottle->rack@133, bottle->rack@129, bottle->rack@145, bottle->rack@148, bottle->rack@127, bottle->rack@130, bottle->rack@136
+[  1450s] batch 78/136 'put the wine bottle in the rack' seeds 2-3: bottle->rack@146, bottle->rack@133, bottle->rack@129, bottle->rack@146, bottle->rack@159, bottle->rack@123, bottle->rack@131, bottle->rack@156
+[  1473s] batch 79/136 'put the wine bottle in the rack' seeds 4-5: bottle->rack@165, bottle->rack@138, bottle->rack@131, bottle->rack@148, bottle->rack@160, bottle->rack@129, bottle->rack@138, bottle->rack@146
+[  1494s] batch 80/136 'put the wine bottle in the rack' seeds 6-7: bottle->rack@157, bottle->rack@130, bottle->rack@128, bottle->rack@139, bottle->rack@147, bottle->rack@121, bottle->rack@131, bottle->rack@149
+[  1519s] batch 81/136 'open a drawer' seeds 0-1: middle drawer@131, middle drawer@132, middle drawer@116, middle drawer@123, middle drawer@133, bottom drawer open@300, middle drawer@115, bowl->top drawer@170
+[  1542s] batch 82/136 'open a drawer' seeds 2-3: middle drawer@127, middle drawer@133, middle drawer@127, middle drawer@137, middle drawer@123, middle drawer@133, middle drawer@116, bowl->top drawer@237
+[  1570s] batch 83/136 'open a drawer' seeds 4-5: middle drawer@130, bottom drawer open@300, middle drawer@120, middle drawer@139, middle drawer@139, middle drawer@256, middle drawer@116, bowl->top drawer@182
+[  1597s] batch 84/136 'open a drawer' seeds 6-7: middle drawer@129, middle drawer@133, middle drawer@116, middle drawer@134, middle drawer@127, bottom drawer open@300, middle drawer@124, bowl->top drawer@290
+[  1627s] batch 85/136 'open the drawer' seeds 0-1: middle drawer@143, bottom drawer open@300, middle drawer@117, bowl->top drawer@228, middle drawer@138, none@300, middle drawer@113, bowl->top drawer@207
+[  1647s] batch 86/136 'open the drawer' seeds 2-3: middle drawer@120, middle drawer@133, middle drawer@120, middle drawer@128, middle drawer@119, middle drawer@132, middle drawer@116, bowl->top drawer@169
+[  1676s] batch 87/136 'open the drawer' seeds 4-5: middle drawer@144, bottom drawer open@300, middle drawer@118, middle drawer@139, middle drawer@139, none@300, middle drawer@115, bowl->top drawer@178
+[  1702s] batch 88/136 'open the drawer' seeds 6-7: middle drawer@140, middle drawer@135, middle drawer@116, middle drawer@137, middle drawer@125, none@300, middle drawer@125, bowl->top drawer@223
+[  1715s] batch 89/136 'put the bowl somewhere' seeds 0-1: bowl->stove@84, bowl->stove@79, bowl->stove@82, bowl->stove@84, bowl->stove@85, bowl->stove@79, bowl->stove@91, bowl->stove@86
+[  1729s] batch 90/136 'put the bowl somewhere' seeds 2-3: bowl->stove@85, bowl->stove@79, bowl->stove@81, bowl->stove@84, bowl->stove@87, bowl->stove@80, bowl->stove@83, bowl->plate@81
+[  1742s] batch 91/136 'put the bowl somewhere' seeds 4-5: bowl->stove@86, bowl->stove@78, bowl->stove@81, bowl->stove@84, bowl->plate@87, bowl->stove@79, bowl->stove@82, bowl->plate@79
+[  1756s] batch 92/136 'put the bowl somewhere' seeds 6-7: bowl->stove@98, bowl->stove@79, bowl->stove@92, bowl->stove@83, bowl->stove@83, bowl->stove@79, bowl->stove@84, bowl->stove@85
+[  1768s] batch 93/136 'move the bowl' seeds 0-1: bowl->plate@77, bowl->stove@78, bowl->stove@86, bowl->plate@77, bowl->plate@73, bowl->stove@79, bowl->stove@84, bowl->plate@74
+[  1781s] batch 94/136 'move the bowl' seeds 2-3: bowl->plate@74, bowl->stove@78, bowl->stove@84, bowl->stove@86, bowl->plate@74, bowl->stove@77, bowl->plate@79, bowl->plate@75
+[  1795s] batch 95/136 'move the bowl' seeds 4-5: bowl->plate@76, bowl->stove@77, bowl->stove@84, bowl->stove@88, bowl->plate@75, bowl->stove@78, bowl->plate@140, bowl->plate@75
+[  1808s] batch 96/136 'move the bowl' seeds 6-7: bowl->plate@73, bowl->stove@79, bowl->stove@84, bowl->stove@83, bowl->plate@75, bowl->stove@78, bowl->stove@85, bowl->plate@76
+[  1828s] batch 97/136 'put the wine bottle somewhere' seeds 0-1: bottle->rack@146, bottle->rack@119, bottle->rack@127, bottle->rack@124, bottle->rack@146, bottle->rack@117, bottle->rack@137, bottle->rack@128
+[  1848s] batch 98/136 'put the wine bottle somewhere' seeds 2-3: bottle->rack@132, bottle->rack@117, bottle->rack@129, bottle->rack@127, bottle->rack@136, bottle->rack@120, bottle->rack@127, bottle->rack@131
+[  1870s] batch 99/136 'put the wine bottle somewhere' seeds 4-5: bottle->rack@162, bottle->rack@119, bottle->rack@126, bottle->rack@146, bottle->rack@157, bottle->rack@119, bottle->rack@133, bottle->rack@127
+[  1890s] batch 100/136 'put the wine bottle somewhere' seeds 6-7: bottle->rack@131, bottle->rack@117, bottle->rack@121, bottle->rack@125, bottle->rack@132, bottle->rack@119, bottle->rack@138, bottle->rack@140
+[  1909s] batch 101/136 'move the wine bottle' seeds 0-1: bottle->rack@132, bottle->rack@117, bottle->rack@122, bottle->rack@127, bottle->rack@135, bottle->rack@120, bottle->rack@128, bottle->rack@131
+[  1930s] batch 102/136 'move the wine bottle' seeds 2-3: bottle->rack@131, bottle->rack@121, bottle->rack@138, bottle->rack@128, bottle->rack@132, bottle->rack@122, bottle->rack@121, bottle->rack@150
+[  1951s] batch 103/136 'move the wine bottle' seeds 4-5: bottle->rack@146, bottle->rack@120, bottle->rack@124, bottle->rack@136, bottle->rack@143, bottle->rack@139, bottle->rack@123, bottle->rack@131
+[  1971s] batch 104/136 'move the wine bottle' seeds 6-7: bottle->rack@134, bottle->rack@120, bottle->rack@134, bottle->rack@127, bottle->rack@133, bottle->rack@123, bottle->rack@150, bottle->rack@147
+[  1984s] batch 105/136 'put something on the stove' seeds 0-1: stove on@77, stove on@75, stove on@80, stove on@76, stove on@77, stove on@75, stove on@82, stove on@76
+[  1996s] batch 106/136 'put something on the stove' seeds 2-3: stove on@77, stove on@76, stove on@78, stove on@75, stove on@76, stove on@74, stove on@85, stove on@76
+[  2009s] batch 107/136 'put something on the stove' seeds 4-5: stove on@77, stove on@74, stove on@91, stove on@75, stove on@75, stove on@74, stove on@77, stove on@76
+[  2022s] batch 108/136 'put something on the stove' seeds 6-7: stove on@76, stove on@74, stove on@79, stove on@75, stove on@77, stove on@75, stove on@81, stove on@76
+[  2034s] batch 109/136 'put something on the plate' seeds 0-1: bowl->plate@74, bowl->plate@76, bowl->plate@76, bowl->plate@70, bowl->plate@71, bowl->plate@74, bowl->plate@79, bowl->plate@72
+[  2046s] batch 110/136 'put something on the plate' seeds 2-3: bowl->plate@74, bowl->plate@75, bowl->plate@74, bowl->plate@72, bowl->plate@73, bowl->plate@77, bowl->plate@77, bowl->plate@74
+[  2058s] batch 111/136 'put something on the plate' seeds 4-5: bowl->plate@74, bowl->plate@76, bowl->plate@78, bowl->plate@73, bowl->plate@72, bowl->plate@75, bowl->plate@77, bowl->plate@75
+[  2070s] batch 112/136 'put something on the plate' seeds 6-7: bowl->plate@64, bowl->plate@76, bowl->plate@77, bowl->plate@69, bowl->plate@77, bowl->plate@75, bowl->plate@76, bowl->plate@75
+[  2084s] batch 113/136 'put something on top of the cabinet' seeds 0-1: bowl->cabinet top@87, bowl->cabinet top@83, bottle->cabinet top@81, bowl->cabinet top@85, bowl->cabinet top@83, bowl->cabinet top@82, bottle->cabinet top@81, bowl->cabinet top@85
+[  2097s] batch 114/136 'put something on top of the cabinet' seeds 2-3: bowl->cabinet top@85, bowl->cabinet top@82, bottle->cabinet top@80, bowl->cabinet top@83, bowl->cabinet top@86, bowl->cabinet top@82, bottle->cabinet top@81, bowl->cabinet top@88
+[  2112s] batch 115/136 'put something on top of the cabinet' seeds 4-5: bowl->cabinet top@86, bowl->cabinet top@111, bottle->cabinet top@80, bowl->cabinet top@87, bowl->cabinet top@86, bowl->cabinet top@84, bottle->cabinet top@81, bowl->cabinet top@87
+[  2125s] batch 116/136 'put something on top of the cabinet' seeds 6-7: bowl->cabinet top@85, bowl->cabinet top@85, bottle->cabinet top@80, bowl->cabinet top@83, bowl->cabinet top@87, bowl->cabinet top@84, bottle->cabinet top@81, bowl->cabinet top@86
+[  2138s] batch 117/136 'put the bowl on the cabinet' seeds 0-1: bowl->cabinet top@82, bowl->cabinet top@84, bowl->cabinet top@89, bowl->cabinet top@80, bowl->cabinet top@73, bowl->cabinet top@83, bowl->cabinet top@90, bowl->cabinet top@83
+[  2153s] batch 118/136 'put the bowl on the cabinet' seeds 2-3: bowl->cabinet top@82, bowl->cabinet top@112, bowl->cabinet top@89, bowl->cabinet top@83, bowl->cabinet top@84, bowl->cabinet top@80, bowl->cabinet top@87, bowl->cabinet top@83
+[  2167s] batch 119/136 'put the bowl on the cabinet' seeds 4-5: bowl->cabinet top@84, bowl->cabinet top@81, bowl->cabinet top@89, bowl->cabinet top@82, bowl->cabinet top@82, bowl->cabinet top@84, bowl->cabinet top@89, bowl->cabinet top@82
+[  2181s] batch 120/136 'put the bowl on the cabinet' seeds 6-7: bowl->cabinet top@85, bowl->cabinet top@84, bowl->cabinet top@89, bowl->cabinet top@78, bowl->cabinet top@84, bowl->cabinet top@84, bowl->cabinet top@90, bowl->cabinet top@84
+[  2205s] batch 121/136 'tidy up the table' seeds 0-1: bowl->stove@134, bowl->stove@81, bowl->stove@119, none@300, bowl->plate@77, bowl->stove@81, bowl->plate@92, none@300
+[  2218s] batch 122/136 'tidy up the table' seeds 2-3: bowl->plate@76, bowl->stove@81, bowl->stove@86, stove on@99, bowl->plate@78, bowl->stove@84, bowl->plate@85, stove on@99
+[  2238s] batch 123/136 'tidy up the table' seeds 4-5: bowl->plate@77, bowl->stove@80, bowl->stove@84, none@300, bowl->plate@76, bowl->stove@80, bowl->plate@87, stove on@100
+[  2258s] batch 124/136 'tidy up the table' seeds 6-7: bowl->stove@126, bowl->stove@82, bowl->plate@88, none@300, bowl->plate@77, bowl->stove@81, bowl->stove@87, stove on@77
+[  2302s] batch 125/136 'put the wine bottle on the stove' seeds 0-1: none@300, none@300, none@300, none@300, none@300, none@300, none@300, none@300
+[  2344s] batch 126/136 'put the wine bottle on the stove' seeds 2-3: none@300, none@300, bottle->stove@173, none@300, none@300, none@300, none@300, none@300
+[  2387s] batch 127/136 'put the wine bottle on the stove' seeds 4-5: none@300, none@300, none@300, none@300, none@300, none@300, none@300, bottle->stove@166
+[  2425s] batch 128/136 'put the wine bottle on the stove' seeds 6-7: none@300, none@300, bottle->stove@177, none@300, bottle->stove@161, none@300, bottle->stove@178, none@300
+[  2450s] batch 129/136 'put the cream cheese on the plate' seeds 0-1: cheese->plate@109, cheese->plate@111, plate->stove front@257, cheese->plate@113, cheese->plate@100, cheese->plate@112, none@300, cheese->bowl@86
+[  2472s] batch 130/136 'put the cream cheese on the plate' seeds 2-3: cheese->plate@104, cheese->plate@113, plate->stove front@224, cheese->plate@113, cheese->plate@113, cheese->plate@112, plate->stove front@209, cheese->plate@108
+[  2498s] batch 131/136 'put the cream cheese on the plate' seeds 4-5: cheese->plate@109, cheese->plate@164, plate->stove front@275, cheese->bowl@86, cheese->plate@104, cheese->plate@95, none@300, cheese->plate@111
+[  2525s] batch 132/136 'put the cream cheese on the plate' seeds 6-7: none@300, cheese->plate@110, none@300, cheese->plate@114, cheese->plate@107, cheese->plate@106, plate->stove front@262, cheese->bowl@88
+[  2542s] batch 133/136 'put the cream cheese on the stove' seeds 0-1: cheese->bowl@90, cheese->stove@122, cheese->bowl@80, cheese->stove@112, cheese->bowl@91, cheese->stove@115, cheese->bowl@80, cheese->stove@121
+[  2560s] batch 134/136 'put the cream cheese on the stove' seeds 2-3: cheese->bowl@88, cheese->stove@131, cheese->stove@145, cheese->stove@111, cheese->bowl@88, cheese->stove@152, cheese->bowl@80, cheese->stove@112
+[  2579s] batch 135/136 'put the cream cheese on the stove' seeds 4-5: cheese->bowl@88, cheese->stove@115, cheese->bowl@87, cheese->stove@133, cheese->bowl@86, cheese->stove@173, cheese->stove@130, cheese->stove@111
+[  2598s] batch 136/136 'put the cream cheese on the stove' seeds 6-7: cheese->bowl@89, cheese->stove@184, cheese->bowl@87, cheese->stove@112, cheese->bowl@87, cheese->stove@112, cheese->bowl@88, cheese->stove@112
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets

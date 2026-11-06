@@ -1,0 +1,23 @@
+
+ground truth split4: 18 positive of 136
+  off-basin cm   AUROC 0.69 [0.47, 0.87]  within underspecified/novel 0.58
+  drift cm       AUROC 0.66 [0.53, 0.73]  within underspecified/novel 0.59
+  drift gated    AUROC 0.59 [0.40, 0.70]  within underspecified/novel 0.52
+  off gated      AUROC 0.60 [0.43, 0.71]  within underspecified/novel 0.48
+  t0 sigma1      AUROC 0.63 [0.52, 0.74]  within underspecified/novel 0.50
+
+ground truth split12: 26 positive of 136
+  off-basin cm   AUROC 0.67 [0.57, 0.77]  within underspecified/novel 0.64
+  drift cm       AUROC 0.71 [0.58, 0.84]  within underspecified/novel 0.67
+  drift gated    AUROC 0.66 [0.48, 0.76]  within underspecified/novel 0.57
+  off gated      AUROC 0.63 [0.51, 0.70]  within underspecified/novel 0.54
+  t0 sigma1      AUROC 0.61 [0.57, 0.66]  within underspecified/novel 0.51
+
+ground truth mode12: 16 positive of 136
+  off-basin cm   AUROC 0.75 [0.64, 0.84]  within underspecified/novel 0.66
+  drift cm       AUROC 0.73 [0.64, 0.79]  within underspecified/novel 0.68
+  drift gated    AUROC 0.72 [0.60, 0.78]  within underspecified/novel 0.64
+  off gated      AUROC 0.70 [0.60, 0.81]  within underspecified/novel 0.60
+  t0 sigma1      AUROC 0.69 [0.57, 0.79]  within underspecified/novel 0.57
+
+null of the rollout-level 'max(AUROC, 1-AUROC)' with 4 seeds: mean 0.81 (observed 0.85)

@@ -1,0 +1,518 @@
+{
+ "frames": {
+  "move the bowl|3|0|40": {
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 6,
+    "ok": true
+   },
+   "minus": {
+    "name": "cabinet",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 20,
+    "dv": 18,
+    "ok": false
+   }
+  },
+  "move the bowl|3|0|50": {
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "added": [
+    "bottle"
+   ],
+   "same": false,
+   "plus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 20,
+    "dv": 3,
+    "ok": true
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 9,
+    "dv": 3,
+    "ok": true
+   }
+  },
+  "move the bowl|3|1|40": {
+   "truth": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "added": [],
+   "same": true,
+   "plus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 5,
+    "ok": true
+   },
+   "minus": {
+    "name": "cabinet",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 16,
+    "dv": 16,
+    "ok": false
+   }
+  },
+  "tidy up the table|2|0|0": {
+   "truth": {
+    "plus": "stove",
+    "minus": "none"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "reach/descend",
+    "dh": 3,
+    "dv": -18,
+    "ok": false
+   },
+   "minus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 27,
+    "dv": -24,
+    "ok": null
+   }
+  },
+  "tidy up the table|2|0|40": {
+   "truth": {
+    "plus": "none",
+    "minus": "plate"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "lift",
+    "dh": 14,
+    "dv": 14,
+    "ok": null
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 4,
+    "ok": true
+   }
+  },
+  "tidy up the table|2|0|50": {
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 21,
+    "dv": 7,
+    "ok": true
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 11,
+    "dv": 8,
+    "ok": true
+   }
+  },
+  "tidy up the table|2|1|0": {
+   "truth": {
+    "plus": "stove",
+    "minus": "none"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "reach/descend",
+    "dh": 3,
+    "dv": -18,
+    "ok": false
+   },
+   "minus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 27,
+    "dv": -24,
+    "ok": null
+   }
+  },
+  "tidy up the table|2|1|10": {
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "box",
+    "how": "ray",
+    "phase": "reach/descend",
+    "dh": 8,
+    "dv": -13,
+    "ok": false
+   },
+   "minus": {
+    "name": "bottle",
+    "how": "nearest(gate)",
+    "phase": "reach/descend",
+    "dh": 2,
+    "dv": -14,
+    "ok": false
+   }
+  },
+  "tidy up the table|2|1|40": {
+   "truth": {
+    "plus": "stove",
+    "minus": "stove"
+   },
+   "added": [
+    "bowl"
+   ],
+   "same": true,
+   "plus": {
+    "name": "cabinet",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 19,
+    "dv": 16,
+    "ok": false
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 5,
+    "ok": false
+   }
+  },
+  "put the cream cheese on the stove|2|0|30": {
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "added": [
+    "stove"
+   ],
+   "same": true,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 16,
+    "dv": -5,
+    "ok": false
+   },
+   "minus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 16,
+    "dv": -9,
+    "ok": true
+   }
+  },
+  "put the cream cheese on the stove|2|0|50": {
+   "truth": {
+    "plus": "stove",
+    "minus": "bowl"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 18,
+    "dv": 12,
+    "ok": true
+   },
+   "minus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "lift",
+    "dh": 12,
+    "dv": 12,
+    "ok": true
+   }
+  },
+  "put the cream cheese on the stove|2|0|70": {
+   "truth": {
+    "plus": "bowl",
+    "minus": "stove"
+   },
+   "added": [
+    "bottle"
+   ],
+   "same": false,
+   "plus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "place/hover",
+    "dh": 4,
+    "dv": -4,
+    "ok": true
+   },
+   "minus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 12,
+    "dv": -1,
+    "ok": true
+   }
+  },
+  "put the cream cheese on the stove|2|1|30": {
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "added": [
+    "stove"
+   ],
+   "same": true,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 17,
+    "dv": -4,
+    "ok": false
+   },
+   "minus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 16,
+    "dv": -8,
+    "ok": true
+   }
+  },
+  "put the cream cheese on the stove|2|1|50": {
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "added": [],
+   "same": true,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 20,
+    "dv": 11,
+    "ok": false
+   },
+   "minus": {
+    "name": "bowl",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 11,
+    "ok": true
+   }
+  },
+  "put the cream cheese on the stove|2|1|70": {
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "added": [
+    "bottle"
+   ],
+   "same": true,
+   "plus": {
+    "name": "plate",
+    "how": "nearest(gate)",
+    "phase": "place/hover",
+    "dh": 3,
+    "dv": -3,
+    "ok": false
+   },
+   "minus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 20,
+    "dv": 0,
+    "ok": false
+   }
+  },
+  "move the bowl|2|1|40": {
+   "truth": {
+    "plus": "stove",
+    "minus": "stove"
+   },
+   "added": [],
+   "same": true,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 13,
+    "dv": 6,
+    "ok": true
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 6,
+    "ok": false
+   }
+  },
+  "move the bowl|2|1|50": {
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 4,
+    "ok": true
+   },
+   "minus": {
+    "name": "stove",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 18,
+    "dv": 5,
+    "ok": true
+   }
+  },
+  "move the bowl|2|0|56": {
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 9,
+    "dv": -2,
+    "ok": true
+   },
+   "minus": {
+    "name": "stove",
+    "how": "line",
+    "phase": "transport",
+    "dh": 12,
+    "dv": 0,
+    "ok": true
+   }
+  },
+  "move the bowl|2|0|50": {
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 15,
+    "dv": 8,
+    "ok": true
+   },
+   "minus": {
+    "name": "plate",
+    "how": "inside",
+    "phase": "transport",
+    "dh": 11,
+    "dv": 7,
+    "ok": true
+   }
+  },
+  "move the bowl|2|0|60": {
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "added": [],
+   "same": false,
+   "plus": {
+    "name": "plate",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 9,
+    "dv": -3,
+    "ok": true
+   },
+   "minus": {
+    "name": "stove",
+    "how": "ray",
+    "phase": "transport",
+    "dh": 15,
+    "dv": -1,
+    "ok": true
+   }
+  }
+ },
+ "tally": {
+  "all": [
+   18,
+   23
+  ],
+  "transport": [
+   16,
+   17
+  ],
+  "reach/descend": [
+   0,
+   4
+  ],
+  "lift": [
+   1,
+   1
+  ],
+  "place/hover": [
+   1,
+   1
+  ]
+ }
+}

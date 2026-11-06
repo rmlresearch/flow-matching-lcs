@@ -1,0 +1,159 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING:root:Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+The PI05 model is a direct port of the OpenPI implementation. 
+This implementation follows the original OpenPI structure for compatibility. 
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: lerobot/pi05_libero_finetuned_v044
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[    52s] vocab 257152, readable words 59094
+[    52s] embedding table (257152, 2048) scale 45.25
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/james/Projects/flow-matching-lcs/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/james/.cache/libero/assets
+[    54s] state t 0: P 968, text tokens 43: ['<bos>', 'Task', ':', '▁open', '▁a', '▁drawer', ',', '▁State', ':', '▁-', '1', '▁'] ..., prompt positions [771, 772, 773]
+[    80s] branches: cluster sizes [8, 8]; labels per cluster: 0: [[], [], [], [], [], [], [], []] | 1: [[], [], [], [], [], [], [], []]
+[    81s] |Delta_branch| 0.1 cm, |Delta_cf| 87.6 cm, cos 0.63; lambda(plan) 0.86
+[    81s]   Delta_branch: gradient norm per block {'images': 41.02739625039976, 'prompt': 12.965748310089111, 'other_text': 7.128295985981822}; per prompt token open:3.258 a:2.537 drawer:7.172
+[   117s]   Delta_branch: 170 verified; first-order vs actual shift (substitutions): Spearman 0.27
+     shift cm   move lambda     f.o.  text
+        14.75  18.12   1.03    22.28  open the top drawer [ins-the]
+        14.59  17.82   1.03    22.28  open top drawer [sub]
+        14.54  17.62   1.02    67.19  top a drawer [sub]
+        14.40  17.78   1.02    22.28  open a top drawer [ins]
+        12.96  18.98   1.00      nan  open the top drawer and put the bowl inside [ref]
+         4.83   9.04   0.92      nan  open the vérit drawer [ins-the]
+         3.47   7.66   0.88    34.07  pymysql a drawer [sub]
+         1.01   5.50   0.85      nan  open a vérit drawer [ins]
+         0.98   6.98   0.86    53.88  open the gouverneur drawer [ins-the]
+         0.50  10.90   0.81    29.75  renfer a drawer [sub]
+         0.40   1.42   0.87     3.73  open the drawer [sub]
+         0.16   5.88   0.86    33.54  pamph a drawer [sub]
+         0.10   1.37   0.86     0.21  open it drawer [sub]
+         0.04   2.08   0.85     0.21  open the it drawer [ins-the]
+          nan    nan    nan      nan  ... []
+      -123.68 230.68  -0.70    44.70  open a malheureux [sub]
+      -124.00 232.48  -0.69   -67.89  open a ghe [sub]
+      -124.05 231.14  -0.70   -69.40  open a blumen [sub]
+      -124.17 232.70  -0.71    43.73  open a sympathique [sub]
+      -124.18 235.89  -0.71    45.81  open a refaire [sub]
+      -124.57 235.87  -0.73    63.90  open a coupable [sub]
+      -124.69 233.65  -0.71   -67.30  open a desinf [sub]
+      -124.75 233.03  -0.70   -71.04  open a parf [sub]
+      -124.83 231.27  -0.70   -68.17  open a bej [sub]
+      -125.23 234.66  -0.73   -76.03  open a cim [sub]
+      -125.27 232.58  -0.72   -80.29  open a tuc [sub]
+      -125.28 232.49  -0.71   -67.18  open a ciga [sub]
+      -125.76 234.73  -0.73    45.35  open a producteur [sub]
+      -127.49 235.89  -0.75   -68.32  open a aquare [sub]
+
+[   118s]   Delta_cf: gradient norm per block {'images': 63.37234600982629, 'prompt': 19.971735954284668, 'other_text': 11.242363484576344}; per prompt token open:5.008 a:3.913 drawer:11.050
+[   154s]   Delta_cf: 170 verified; first-order vs actual shift (substitutions): Spearman 0.20
+     shift cm   move lambda     f.o.  text
+        14.69  18.12   1.03    33.55  open the top drawer [ins-the]
+        14.52  17.82   1.03    33.55  open top drawer [sub]
+        14.20  17.78   1.02    33.55  open a top drawer [ins]
+        13.97  17.62   1.02   102.56  top a drawer [sub]
+        12.17  18.98   1.00      nan  open the top drawer and put the bowl inside [ref]
+         1.50   7.66   0.88    50.30  pymysql a drawer [sub]
+         0.78   1.42   0.87     5.75  open the drawer [sub]
+        -0.02   6.98   0.86    89.17  open the gouverneur drawer [ins-the]
+        -0.10   1.37   0.86     0.45  open it drawer [sub]
+        -0.43   5.88   0.86    50.11  pamph a drawer [sub]
+        -0.77   2.08   0.85     0.45  open the it drawer [ins-the]
+        -1.68   3.37   0.84     5.75  open the the drawer [ins-the]
+        -2.65   5.65   0.83    44.28  shewn a drawer [sub]
+        -4.24  10.90   0.81    45.23  renfer a drawer [sub]
+          nan    nan    nan      nan  ... []
+      -136.71 233.03  -0.70  -102.16  open a parf [sub]
+      -136.75 231.45  -0.70  -101.56  open a erd [sub]
+      -136.84 234.55  -0.70    90.97  open a malade [sub]
+      -136.87 233.75  -0.70    89.17  open a gouverneur [sub]
+      -137.31 232.49  -0.71   -95.70  open a ciga [sub]
+      -137.40 233.65  -0.71   -97.43  open a desinf [sub]
+      -137.58 235.89  -0.71    75.69  open a refaire [sub]
+      -137.78 232.09  -0.71    71.76  open a belangrij [sub]
+      -138.05 232.58  -0.72  -115.23  open a tuc [sub]
+      -138.69 231.69  -0.72    72.57  open a patrie [sub]
+      -139.17 235.87  -0.73   100.98  open a coupable [sub]
+      -139.20 234.66  -0.73  -108.27  open a cim [sub]
+      -139.28 234.73  -0.73    72.92  open a producteur [sub]
+      -140.92 235.89  -0.75   -96.08  open a aquare [sub]
+
+[   154s] state t 10: P 968, text tokens 43: ['<bos>', 'Task', ':', '▁open', '▁a', '▁drawer', ',', '▁State', ':', '▁', '4', '▁'] ..., prompt positions [771, 772, 773]
+[   182s] branches: cluster sizes [9, 7]; labels per cluster: 0: [[], [], [], [], [], [], [], [], []] | 1: [[], [], [], [], [('top drawer open', 53)], [], [('top drawer open', 54)]]
+[   182s] |Delta_branch| 0.3 cm, |Delta_cf| 102.4 cm, cos -0.15; lambda(plan) 0.69
+[   183s]   Delta_branch: gradient norm per block {'images': 47.15802133921534, 'prompt': 8.94967007637024, 'other_text': 8.066275275312364}; per prompt token open:2.228 a:1.765 drawer:4.956
+[   219s]   Delta_branch: 170 verified; first-order vs actual shift (substitutions): Spearman 0.28
+     shift cm   move lambda     f.o.  text
+        30.35  43.37   1.00      nan  open the top drawer and put the bowl inside [ref]
+        23.06  36.57   0.98    20.48  open a top drawer [ins]
+        23.01  36.60   0.98    20.48  open the top drawer [ins-the]
+        22.97  36.13   0.98    20.48  open top drawer [sub]
+        22.64  36.63   0.98    43.68  top a drawer [sub]
+        16.24  75.23   0.03   -23.68  middle a drawer [sub]
+        16.22  76.33   0.01   -36.48  open a middle drawer [ins]
+        16.09  76.10   0.01   -36.48  open the middle drawer [ins-the]
+        16.05  75.98   0.02   -36.48  open middle drawer [sub]
+        14.80  77.11   0.00      nan  open the middle drawer of the cabinet [ref]
+        12.94  67.56   0.89   -89.18  open a philipp [sub]
+         9.27  62.68   0.12   -27.98  open the tungkol drawer [ins-the]
+         8.95  61.75   0.12   -27.98  open a tungkol drawer [ins]
+         8.29  62.00   0.12   -27.98  open tungkol drawer [sub]
+          nan    nan    nan      nan  ... []
+        -9.70  17.38   0.55   -96.61  open the apprehen drawer [ins-the]
+       -10.09  14.79   0.65   -19.36  franz a drawer [sub]
+       -10.17  15.79   0.63    25.98  renfer a drawer [sub]
+       -10.49  19.35   0.56   -19.64  bayern a drawer [sub]
+       -11.05  17.05   0.58   -94.39  open a fuf [sub]
+       -11.05  16.61   0.77   -94.37  open a aquarelle [sub]
+       -11.06  25.92   0.47   -15.90  beijo a drawer [sub]
+       -11.35  18.81   0.55    26.97  ouvre a drawer [sub]
+       -11.49  16.75   0.60   -89.14  open a affor [sub]
+       -12.11  20.12   0.54   -94.37  open a aquarelle drawer [ins]
+       -12.25  14.40   0.71   -95.16  open a intersper [sub]
+       -12.44  26.02   0.48   -94.37  open the aquarelle drawer [ins-the]
+       -12.84  16.83   0.74   -96.61  open a apprehen [sub]
+       -13.39  16.74   0.74   -90.96  open a ineffec [sub]
+
+[   219s]   Delta_cf: gradient norm per block {'images': 59.28100872342475, 'prompt': 14.644432306289673, 'other_text': 10.24008131865412}; per prompt token open:3.745 a:3.006 drawer:7.893
+[   256s]   Delta_cf: 170 verified; first-order vs actual shift (substitutions): Spearman 0.40
+     shift cm   move lambda     f.o.  text
+        31.35  43.37   1.00      nan  open the top drawer and put the bowl inside [ref]
+        29.66  36.63   0.98    78.60  top a drawer [sub]
+        29.42  36.60   0.98    31.33  open the top drawer [ins-the]
+        29.27  36.57   0.98    31.33  open a top drawer [ins]
+        28.84  36.13   0.98    31.33  open top drawer [sub]
+        22.65  90.05   0.91      nan  open a э [sub]
+        20.97  75.08   0.90      nan  open a ycling [sub]
+        20.65  60.00   0.90     0.25  open a gouverneur [sub]
+        20.64  85.10   0.90      nan  open a nView [sub]
+        19.90  67.56   0.89  -135.16  open a philipp [sub]
+        19.70  81.61   0.89      nan  open a ере [sub]
+        18.67  83.93   0.88      nan  open a ريقة [sub]
+        18.38  68.04   0.87     7.59  open a coupable [sub]
+        15.25  78.51   0.84      nan  open a Chávez [sub]
+          nan    nan    nan      nan  ... []
+       -57.67  60.51   0.13      nan  open a nView drawer [ins]
+       -57.68  60.46   0.13      nan  open the nView drawer [ins-the]
+       -57.97  61.16   0.13   -54.55  open the guangdong drawer [ins-the]
+       -58.31  61.75   0.12   -57.16  open a tungkol drawer [ins]
+       -58.70  62.00   0.12   -57.16  open tungkol drawer [sub]
+       -59.13  62.68   0.12   -57.16  open the tungkol drawer [ins-the]
+       -59.94  63.54   0.11   -53.77  open sarili drawer [sub]
+       -60.88  65.10   0.10   -53.77  open a sarili drawer [ins]
+       -60.94  65.06   0.10   -53.77  open the sarili drawer [ins-the]
+       -68.37  75.23   0.03   -37.63  middle a drawer [sub]
+       -69.40  75.98   0.02   -70.05  open middle drawer [sub]
+       -69.52  76.10   0.01   -70.05  open the middle drawer [ins-the]
+       -69.70  76.33   0.01   -70.05  open a middle drawer [ins]
+       -71.03  77.11   0.00      nan  open the middle drawer of the cabinet [ref]
+

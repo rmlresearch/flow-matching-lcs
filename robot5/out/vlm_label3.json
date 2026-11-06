@@ -1,0 +1,3487 @@
+{
+ "frames": {
+  "move the bowl|3|0|40": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "hold": {
+    "plus": [
+     "bowl->plate",
+     "bowl->plate"
+    ],
+    "minus": [
+     "bowl->stove",
+     "bowl->stove"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "cabinet"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "cabinet",
+     "plate",
+     "bowl",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 370, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [530, 357, 565, 487], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [670, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [424, 630, 607, 767], \"label\": \"plate\"},\n\t{\"bbox_2d\": [437, 537, 565, 607], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [307, 577, 370, 667], \"label\": \"box\"}\n]\n```",
+    "t": 3.083420753479004
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "cabinet",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "box",
+     "plate",
+     "bowl",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 230,\n        \"y\": 420\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 420\n    },\n    \"box\": {\n        \"x\": 330,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.4973716735839844
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "37"
+    ],
+    "minus": [
+     "top drawer",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "33"
+    ],
+    "minus": [
+     "bottom drawer",
+     "84"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "chopping board"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.2715189456939697
+   }
+  },
+  "move the bowl|3|0|50": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "bowl->plate",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 380, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [424, 630, 607, 767], \"label\": \"plate\"},\n\t{\"bbox_2d\": [437, 497, 568, 570], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [667, 365, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [307, 579, 374, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.0844027996063232
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"plate\": {\n        \"bbox_2d\": [\n            424,\n            630,\n            604,\n            765\n        ]\n    },\n    \"bowl\": {\n        \"bbox_2d\": [\n            437,\n            497,\n            568,\n            570\n        ]\n    },\n    \"stove\": {\n        \"bbox_2d\": [\n            160,\n            393,\n            380,\n            540\n        ]\n    },\n    \"box\": {\n        \"bbox_2d\": [\n            307,\n            577,\n            374,\n            665\n        ]\n    },\n    \"top drawer\": {\n        \"bbox_2d\": [\n            657,\n            365,\n            1000,\n            570\n        ]\n    },\n    \"middle drawer\": {\n        \"bbox_2d\": [\n            657,\n            570,\n            1000,\n            770\n        ]\n    },\n    \"bottom drawer\": {\n        \"bbox_2d\": [\n            657,\n            770,\n            1000,\n            837\n        ]\n    }\n}",
+    "t": 3.4716696739196777
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "plate"
+    },
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    },
+    "t": 0.2492825984954834
+   }
+  },
+  "move the bowl|3|1|40": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "hold": {
+    "plus": [
+     "bowl->plate",
+     "bowl->plate"
+    ],
+    "minus": [
+     "bowl->plate",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 378, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [528, 357, 565, 487], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [422, 630, 607, 765], \"label\": \"plate\"},\n\t{\"bbox_2d\": [670, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [307, 578, 372, 666], \"label\": \"box\"}\n]\n```",
+    "t": 2.078376293182373
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "box",
+     "plate",
+     "bowl",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 230,\n        \"y\": 420\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 400\n    },\n    \"box\": {\n        \"x\": 330,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 670\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.51342511177063
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "31"
+    ],
+    "minus": [
+     "top drawer",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "30"
+    ],
+    "minus": [
+     "bottom drawer",
+     "78"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.2710988521575928
+   }
+  },
+  "tidy up the table|2|0|0": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "stove",
+    "minus": "stove on"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "none",
+     "stove on"
+    ]
+   },
+   "world": {
+    "plus": "bottle",
+    "minus": "stove"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [527, 357, 579, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [419, 510, 560, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [419, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [327, 580, 393, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.544980049133301
+   },
+   "objects/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "bowl",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 850,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 850,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 850,\n        \"y\": 600\n    }\n}",
+    "t": 2.5234692096710205
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "bowl",
+     "37"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bottle",
+     "minus": "stove"
+    },
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    },
+    "t": 0.28276681900024414
+   }
+  },
+  "tidy up the table|2|0|40": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "hold": {
+    "plus": [
+     "bowl->plate",
+     "none"
+    ],
+    "minus": [
+     "bowl->plate",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "box",
+     "cabinet",
+     "plate"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 370, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [537, 357, 578, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [418, 540, 562, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [328, 578, 392, 668], \"label\": \"box\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"}\n]\n```",
+    "t": 2.547062873840332
+   },
+   "objects/raw": {
+    "plus": [
+     "cabinet",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "box",
+     "plate",
+     "bowl",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 230,\n        \"y\": 420\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 420\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"bowl\": {\n        \"x\": 480,\n        \"y\": 560\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.5457236766815186
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "top drawer",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "bottom drawer",
+     "129"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.29950571060180664
+   }
+  },
+  "tidy up the table|2|0|50": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "bowl->plate",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "bowl",
+     "stove",
+     "bottle",
+     "cabinet",
+     "box",
+     "plate"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [418, 530, 558, 607], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [160, 395, 340, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [537, 357, 578, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [328, 578, 394, 667], \"label\": \"box\"},\n\t{\"bbox_2d\": [418, 640, 604, 783], \"label\": \"plate\"}\n]\n```",
+    "t": 2.607727527618408
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bowl",
+     "bottle",
+     "box",
+     "plate",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 220,\n        \"y\": 420\n    },\n    \"bowl\": {\n        \"x\": 480,\n        \"y\": 550\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 420\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 700\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.490540027618408
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "bowl",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "75"
+    ],
+    "minus": [
+     "plate",
+     "37"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.2638218402862549
+   }
+  },
+  "tidy up the table|2|1|0": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "stove",
+    "minus": "stove on"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "none",
+     "stove on"
+    ]
+   },
+   "world": {
+    "plus": "bottle",
+    "minus": "stove"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [527, 357, 579, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [419, 510, 560, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [419, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [327, 580, 393, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.59364914894104
+   },
+   "objects/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "bowl",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 850,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 850,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 850,\n        \"y\": 600\n    }\n}",
+    "t": 2.501558303833008
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "bowl",
+     "37"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bottle",
+     "minus": "stove"
+    },
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    },
+    "t": 0.2840299606323242
+   }
+  },
+  "tidy up the table|2|1|10": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "bowl->plate",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "bowl",
+    "minus": "bottle"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [527, 357, 578, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [418, 510, 561, 621], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [327, 580, 393, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.5452749729156494
+   },
+   "objects/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "box",
+     "ray"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 850,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 850,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 850,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.5941567420959473
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "bowl",
+     "43"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "box",
+     "59"
+    ],
+    "minus": [
+     "bottom drawer",
+     "73"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bowl",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    },
+    "t": 0.2725861072540283
+   }
+  },
+  "tidy up the table|2|1|40": {
+   "text": "tidy up the table",
+   "truth": {
+    "plus": "stove",
+    "minus": "stove"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "bowl->stove",
+     "bowl->stove"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "cabinet",
+     "plate",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 395, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [537, 357, 578, 507], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [328, 578, 395, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.1833107471466064
+   },
+   "objects/raw": {
+    "plus": [
+     "cabinet",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "cabinet",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 490,\n        \"y\": 680\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 570\n    },\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 440\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 420\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.6440305709838867
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "middle drawer",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "bottom drawer",
+     "119"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "drawer",
+     "minus": "plate"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    },
+    "t": 0.2793760299682617
+   }
+  },
+  "put the cream cheese on the stove|2|0|30": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "stove",
+    "minus": "bowl"
+   },
+   "hold": {
+    "plus": [
+     "cheese->bowl",
+     "cheese->stove"
+    ],
+    "minus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "bowl"
+   },
+   "objects": {
+    "labels": [
+     "plate",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [418, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [421, 510, 561, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [527, 357, 579, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [327, 580, 393, 668], \"label\": \"box\"}\n]\n```",
+    "t": 2.130070209503174
+   },
+   "objects/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 675\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.2804102897644043
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bottom drawer",
+     "48"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "middle drawer",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bottle",
+     "minus": "bowl"
+    },
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    },
+    "t": 0.2779815196990967
+   }
+  },
+  "put the cream cheese on the stove|2|0|50": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "stove",
+    "minus": "bowl"
+   },
+   "hold": {
+    "plus": [
+     "cheese->stove",
+     "cheese->stove"
+    ],
+    "minus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ]
+   },
+   "world": {
+    "plus": "stove",
+    "minus": "bowl"
+   },
+   "objects": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [418, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [457, 506, 550, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [159, 393, 300, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [527, 357, 580, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [620, 96, 935, 478], \"label\": \"box\"}\n]\n```",
+    "t": 2.6115097999572754
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "bottle",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"plate\": {\n        \"x\": 486,\n        \"y\": 686\n    },\n    \"bowl\": {\n        \"x\": 486,\n        \"y\": 550\n    },\n    \"stove\": {\n        \"x\": 200,\n        \"y\": 440\n    },\n    \"bottle\": {\n        \"x\": 546,\n        \"y\": 440\n    },\n    \"box\": {\n        \"x\": 800,\n        \"y\": 180\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.5302302837371826
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "bottle",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "85"
+    ],
+    "minus": [
+     "bowl",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.27882838249206543
+   }
+  },
+  "put the cream cheese on the stove|2|0|70": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "bowl",
+    "minus": "stove"
+   },
+   "hold": {
+    "plus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ],
+    "minus": [
+     "cheese->stove",
+     "cheese->stove"
+    ]
+   },
+   "world": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bowl",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 383, 542], \"label\": \"stove\"},\n\t{\"bbox_2d\": [424, 509, 560, 617], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [660, 365, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [627, 96, 937, 470], \"label\": \"box\"}\n]\n```",
+    "t": 2.153843879699707
+   },
+   "objects/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "bowl",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bowl",
+     "plate",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 250,\n        \"y\": 400\n    },\n    \"bowl\": {\n        \"x\": 480,\n        \"y\": 540\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 1.8964252471923828
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "97"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bowl",
+     "minus": "plate"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.26017141342163086
+   }
+  },
+  "put the cream cheese on the stove|2|1|30": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "cheese->bowl"
+    ],
+    "minus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "bowl"
+   },
+   "objects": {
+    "labels": [
+     "plate",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [419, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [422, 510, 560, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [527, 357, 579, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [667, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [328, 580, 393, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.113391399383545
+   },
+   "objects/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 670\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 550\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 850,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 850,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 850,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.2384958267211914
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bottom drawer",
+     "60"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "bowl",
+     "36"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bottle",
+     "minus": "bowl"
+    },
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    },
+    "t": 0.2734103202819824
+   }
+  },
+  "put the cream cheese on the stove|2|1|50": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "hold": {
+    "plus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ],
+    "minus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ]
+   },
+   "world": {
+    "plus": "stove",
+    "minus": "bowl"
+   },
+   "objects": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "cabinet",
+     "box",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [418, 643, 603, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [457, 506, 554, 618], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [159, 393, 327, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [527, 357, 579, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [612, 387, 678, 510], \"label\": \"box\"},\n\t{\"bbox_2d\": [843, 113, 896, 183], \"label\": \"box\"}\n]\n```",
+    "t": 2.8895351886749268
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "bottle",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 488,\n        \"y\": 688\n    },\n    \"bowl\": {\n        \"x\": 494,\n        \"y\": 556\n    },\n    \"stove\": {\n        \"x\": 200,\n        \"y\": 440\n    },\n    \"bottle\": {\n        \"x\": 548,\n        \"y\": 437\n    },\n    \"box\": {\n        \"x\": 770,\n        \"y\": 200\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 780,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 780,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.6091628074645996
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "21"
+    ],
+    "minus": [
+     "bottle",
+     "ray"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "82"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.2821667194366455
+   }
+  },
+  "put the cream cheese on the stove|2|1|70": {
+   "text": "put the cream cheese on the stove",
+   "truth": {
+    "plus": "bowl",
+    "minus": "bowl"
+   },
+   "hold": {
+    "plus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ],
+    "minus": [
+     "cheese->bowl",
+     "cheese->bowl"
+    ]
+   },
+   "world": {
+    "plus": "bowl",
+    "minus": "stove"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bowl",
+     "plate",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 384, 542], \"label\": \"stove\"},\n\t{\"bbox_2d\": [420, 510, 560, 617], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [417, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [660, 365, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [637, 96, 937, 470], \"label\": \"box\"}\n]\n```",
+    "t": 2.2339253425598145
+   },
+   "objects/raw": {
+    "plus": [
+     "bowl",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "48"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bowl",
+     "plate",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 250,\n        \"y\": 400\n    },\n    \"bowl\": {\n        \"x\": 480,\n        \"y\": 540\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 1.9038333892822266
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "bowl",
+     "45"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "76"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "bowl",
+     "minus": "spatula"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.284442663192749
+   }
+  },
+  "open the drawer|3|0|0": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "none"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "none",
+     "none"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [159, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 567, 519], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 606, 767], \"label\": \"plate\"},\n\t{\"bbox_2d\": [429, 506, 567, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [667, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [306, 579, 373, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.5172126293182373
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 497,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 334,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 840,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 840,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 840,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.5430493354797363
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.2608828544616699
+   }
+  },
+  "open the drawer|3|0|10": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "middle drawer"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "middle drawer",
+     "middle drawer"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 568, 518], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 607, 768], \"label\": \"plate\"},\n\t{\"bbox_2d\": [430, 506, 568, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [307, 578, 374, 666], \"label\": \"box\"}\n]\n```",
+    "t": 2.4649531841278076
+   },
+   "objects/raw": {
+    "plus": [
+     "box",
+     "58"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "box",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 440\n    },\n    \"bowl\": {\n        \"x\": 497,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 334,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 850,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 850,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 850,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.567206382751465
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "box",
+     "65"
+    ],
+    "minus": [
+     "bowl",
+     "85"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "box",
+     "48"
+    ],
+    "minus": [
+     "bottom drawer",
+     "202"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.26261353492736816
+   }
+  },
+  "open the drawer|3|0|20": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "middle drawer"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "middle drawer",
+     "middle drawer"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 568, 518], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 607, 768], \"label\": \"plate\"},\n\t{\"bbox_2d\": [430, 506, 568, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [307, 578, 374, 666], \"label\": \"box\"}\n]\n```",
+    "t": 2.5074644088745117
+   },
+   "objects/raw": {
+    "plus": [
+     "box",
+     "18"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "box",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 497,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 334,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 840,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 840,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 840,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.6745712757110596
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "plate",
+     "68"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "box",
+     "inside"
+    ],
+    "minus": [
+     "bottom drawer",
+     "213"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "spoon",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.2938251495361328
+   }
+  },
+  "open the drawer|3|1|0": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "none"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "none",
+     "none"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [159, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 567, 519], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 606, 767], \"label\": \"plate\"},\n\t{\"bbox_2d\": [429, 506, 567, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [667, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [306, 579, 373, 667], \"label\": \"box\"}\n]\n```",
+    "t": 2.6216518878936768
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 497,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 334,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 840,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 840,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 840,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.618598222732544
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "bottle",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": null
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.27724552154541016
+   }
+  },
+  "open the drawer|3|1|10": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "middle drawer"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "middle drawer",
+     "none"
+    ]
+   },
+   "world": {
+    "plus": "bowl",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [159, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 567, 518], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 606, 765], \"label\": \"plate\"},\n\t{\"bbox_2d\": [430, 506, 567, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [662, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [306, 578, 374, 666], \"label\": \"box\"}\n]\n```",
+    "t": 2.5929903984069824
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "cabinet",
+     "ray"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "box",
+     "54"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 270,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 538,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 497,\n        \"y\": 550\n    },\n    \"plate\": {\n        \"x\": 510,\n        \"y\": 680\n    },\n    \"box\": {\n        \"x\": 334,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 840,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 840,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 840,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.5152008533477783
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "70"
+    ],
+    "minus": [
+     "bowl",
+     "85"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "box",
+     "64"
+    ],
+    "minus": [
+     "bottom drawer",
+     "200"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.26490187644958496
+   }
+  },
+  "open the drawer|3|1|20": {
+   "text": "open the drawer",
+   "truth": {
+    "plus": "none",
+    "minus": "middle drawer"
+   },
+   "hold": {
+    "plus": [
+     "none",
+     "none"
+    ],
+    "minus": [
+     "middle drawer",
+     "middle drawer"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "plate",
+     "bowl",
+     "cabinet",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 393, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [512, 357, 568, 518], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [424, 630, 607, 768], \"label\": \"plate\"},\n\t{\"bbox_2d\": [430, 506, 568, 612], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [307, 578, 374, 666], \"label\": \"box\"}\n]\n```",
+    "t": 2.471628427505493
+   },
+   "objects/raw": {
+    "plus": [
+     "box",
+     "16"
+    ],
+    "minus": [
+     "bowl",
+     "71"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "box",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 250,\n        \"y\": 400\n    },\n    \"bottle\": {\n        \"x\": 530,\n        \"y\": 420\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 540\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 670\n    },\n    \"box\": {\n        \"x\": 330,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.5155181884765625
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "?",
+     "none"
+    ],
+    "minus": [
+     "plate",
+     "94"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "box",
+     "25"
+    ],
+    "minus": [
+     "bottom drawer",
+     "174"
+    ],
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": null,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.26180148124694824
+   }
+  },
+  "move the bowl|2|1|40": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "stove",
+    "minus": "stove"
+   },
+   "hold": {
+    "plus": [
+     "bowl->stove",
+     "bowl->stove"
+    ],
+    "minus": [
+     "bowl->stove",
+     "bowl->plate"
+    ]
+   },
+   "world": {
+    "plus": "cheese",
+    "minus": "plate"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bottle",
+     "bowl",
+     "plate",
+     "box",
+     "cabinet"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 357, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [537, 357, 578, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [418, 537, 557, 615], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [328, 578, 393, 668], \"label\": \"box\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"}\n]\n```",
+    "t": 2.4696433544158936
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bottle",
+     "box",
+     "plate",
+     "bowl",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"stove\": {\n        \"x\": 220,\n        \"y\": 420\n    },\n    \"bottle\": {\n        \"x\": 540,\n        \"y\": 420\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"bowl\": {\n        \"x\": 480,\n        \"y\": 560\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}",
+    "t": 2.4372434616088867
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "39"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "103"
+    ],
+    "minus": [
+     "plate",
+     "33"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": true
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": false,
+     "minus": false
+    },
+    "t": 0.2603437900543213
+   }
+  },
+  "move the bowl|2|1|50": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "hold": {
+    "plus": [
+     "bowl->plate",
+     "bowl->plate"
+    ],
+    "minus": [
+     "bowl->stove",
+     "bowl->stove"
+    ]
+   },
+   "world": {
+    "plus": "plate",
+    "minus": "cheese"
+   },
+   "objects": {
+    "labels": [
+     "stove",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box",
+     "plate"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 350, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [440, 509, 570, 583], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [540, 357, 578, 515], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [328, 580, 394, 667], \"label\": \"box\"},\n\t{\"bbox_2d\": [418, 640, 604, 783], \"label\": \"plate\"}\n]\n```",
+    "t": 2.5012080669403076
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 499,\n        \"y\": 687\n    },\n    \"bowl\": {\n        \"x\": 503,\n        \"y\": 540\n    },\n    \"stove\": {\n        \"x\": 240,\n        \"y\": 450\n    },\n    \"bottle\": {\n        \"x\": 557,\n        \"y\": 437\n    },\n    \"box\": {\n        \"x\": 357,\n        \"y\": 610\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 780,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 780,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.4946844577789307
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "68"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "spatula"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": true,
+     "minus": false
+    },
+    "t": 0.27144598960876465
+   }
+  },
+  "move the bowl|2|0|56": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "hold": null,
+   "world": null,
+   "objects": {
+    "labels": [
+     "stove",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box",
+     "plate"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 393, 384, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [418, 450, 562, 536], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [536, 357, 578, 520], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [328, 580, 393, 668], \"label\": \"box\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"}\n]\n```",
+    "t": 2.4890236854553223
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "95"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "{\n    \"plate\": {\n        \"bbox_2d\": [\n            418,\n            640,\n            600,\n            780\n        ]\n    },\n    \"bowl\": {\n        \"bbox_2d\": [\n            428,\n            457,\n            562,\n            533\n        ]\n    },\n    \"stove\": {\n        \"bbox_2d\": [\n            160,\n            393,\n            387,\n            540\n        ]\n    },\n    \"bottle\": {\n        \"bbox_2d\": [\n            533,\n            357,\n            580,\n            520\n        ]\n    },\n    \"box\": {\n        \"bbox_2d\": [\n            328,\n            580,\n            393,\n            668\n        ]\n    },\n    \"top drawer\": {\n        \"bbox_2d\": [\n            657,\n            364,\n            1000,\n            540\n        ]\n    },\n    \"middle drawer\": {\n        \"bbox_2d\": [\n            657,\n            470,\n            770,\n            720\n        ]\n    },\n    \"bottom drawer\": {\n        \"bbox_2d\": [\n            657,\n            580,\n            770,\n            830\n        ]\n    }\n}",
+    "t": 3.9587466716766357
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "inside"
+    ],
+    "minus": [
+     "stove",
+     "96"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "box"
+    },
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    },
+    "t": 0.26902103424072266
+   }
+  },
+  "move the bowl|2|0|50": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "stove",
+    "minus": "plate"
+   },
+   "hold": null,
+   "world": null,
+   "objects": {
+    "labels": [
+     "stove",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box",
+     "plate"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 395, 350, 540], \"label\": \"stove\"},\n\t{\"bbox_2d\": [437, 510, 570, 586], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [540, 357, 577, 510], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [660, 363, 1000, 836], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [328, 580, 393, 667], \"label\": \"box\"},\n\t{\"bbox_2d\": [418, 643, 604, 780], \"label\": \"plate\"}\n]\n```",
+    "t": 2.4962661266326904
+   },
+   "objects/raw": {
+    "plus": [
+     "stove",
+     "inside"
+    ],
+    "minus": [
+     "plate",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "plate",
+     "bowl",
+     "stove",
+     "bottle",
+     "box",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"plate\": {\n        \"x\": 490,\n        \"y\": 680\n    },\n    \"bowl\": {\n        \"x\": 490,\n        \"y\": 530\n    },\n    \"stove\": {\n        \"x\": 230,\n        \"y\": 440\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.622680187225342
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "stove",
+     "ray"
+    ],
+    "minus": [
+     "bowl",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "stove",
+     "79"
+    ],
+    "minus": [
+     "plate",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "bottle"
+    },
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    },
+    "t": 0.2719409465789795
+   }
+  },
+  "move the bowl|2|0|60": {
+   "text": "move the bowl",
+   "truth": {
+    "plus": "plate",
+    "minus": "stove"
+   },
+   "hold": null,
+   "world": null,
+   "objects": {
+    "labels": [
+     "stove",
+     "box",
+     "plate",
+     "bowl",
+     "bottle",
+     "cabinet",
+     "box",
+     "box",
+     "box",
+     "box"
+    ],
+    "raw": "```json\n[\n\t{\"bbox_2d\": [160, 390, 387, 543], \"label\": \"stove\"},\n\t{\"bbox_2d\": [328, 580, 393, 668], \"label\": \"box\"},\n\t{\"bbox_2d\": [418, 643, 604, 783], \"label\": \"plate\"},\n\t{\"bbox_2d\": [393, 407, 533, 493], \"label\": \"bowl\"},\n\t{\"bbox_2d\": [524, 357, 580, 521], \"label\": \"bottle\"},\n\t{\"bbox_2d\": [657, 363, 1000, 837], \"label\": \"cabinet\"},\n\t{\"bbox_2d\": [615, 387, 680, 511], \"label\": \"box\"},\n\t{\"bbox_2d\": [640, 257, 843, 470], \"label\": \"box\"},\n\t{\"bbox_2d\": [687, 96, 937, 357], \"label\": \"box\"},\n\t{\"bbox_2d\": [843, 113, 897, 183], \"label\": \"box\"}\n]\n```",
+    "t": 4.009220838546753
+   },
+   "objects/raw": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "inside"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects/flat": {
+    "plus": [
+     "plate",
+     "ray"
+    ],
+    "minus": [
+     "stove",
+     "ray"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers": {
+    "labels": [
+     "stove",
+     "bowl",
+     "bottle",
+     "box",
+     "plate",
+     "top drawer",
+     "middle drawer",
+     "bottom drawer"
+    ],
+    "raw": "```json\n{\n    \"stove\": {\n        \"x\": 250,\n        \"y\": 430\n    },\n    \"bowl\": {\n        \"x\": 450,\n        \"y\": 430\n    },\n    \"bottle\": {\n        \"x\": 550,\n        \"y\": 430\n    },\n    \"box\": {\n        \"x\": 350,\n        \"y\": 600\n    },\n    \"plate\": {\n        \"x\": 500,\n        \"y\": 680\n    },\n    \"top drawer\": {\n        \"x\": 800,\n        \"y\": 400\n    },\n    \"middle drawer\": {\n        \"x\": 800,\n        \"y\": 500\n    },\n    \"bottom drawer\": {\n        \"x\": 800,\n        \"y\": 600\n    }\n}\n```",
+    "t": 2.536454916000366
+   },
+   "objects+drawers/raw": {
+    "plus": [
+     "box",
+     "53"
+    ],
+    "minus": [
+     "?",
+     "none"
+    ],
+    "ok": {
+     "plus": false,
+     "minus": false
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "objects+drawers/flat": {
+    "plus": [
+     "plate",
+     "63"
+    ],
+    "minus": [
+     "stove",
+     "94"
+    ],
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    }
+   },
+   "arrows": {
+    "answer": {
+     "plus": "plate",
+     "minus": "stove"
+    },
+    "ok": {
+     "plus": true,
+     "minus": true
+    },
+    "ok_world": {
+     "plus": null,
+     "minus": null
+    },
+    "t": 0.2698705196380615
+   }
+  }
+ },
+ "tally": {
+  "objects/raw": [
+   19,
+   30
+  ],
+  "objects/flat": [
+   20,
+   30
+  ],
+  "objects+drawers/raw": [
+   14,
+   30
+  ],
+  "objects+drawers/flat": [
+   19,
+   30
+  ],
+  "arrows": [
+   10,
+   30
+  ]
+ },
+ "tally_world": {
+  "objects/raw": [
+   27,
+   46
+  ],
+  "objects/flat": [
+   32,
+   46
+  ],
+  "objects+drawers/raw": [
+   22,
+   46
+  ],
+  "objects+drawers/flat": [
+   25,
+   46
+  ],
+  "arrows": [
+   18,
+   46
+  ]
+ }
+}

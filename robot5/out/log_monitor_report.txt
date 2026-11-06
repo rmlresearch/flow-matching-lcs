@@ -1,0 +1,112 @@
+136 (prompt, init) pairs, 18 split (4 seeds each)
+
+pair-level: does the monitor's early (t <= 60) lambda drift predict that the pair splits?
+  drift (max over seeds)  : AUROC 0.43 [0.36, 0.46]  within init 0.47 0.32 0.44 0.40  within underspecified/novel 0.47
+  off-basin               : AUROC 0.47 [0.41, 0.53]  within init 0.38 0.44 0.47 0.52  within underspecified/novel 0.52
+  drift, sep >= 8 cm only : AUROC 0.59 [0.40, 0.70]  within init 0.30 0.53 0.73 0.67  within underspecified/novel 0.52
+  off-basin, sep >= 8 cm  : AUROC 0.60 [0.43, 0.71]  within init 0.38 0.53 0.67 0.74  within underspecified/novel 0.48
+  off-basin in cm         : AUROC 0.69 [0.47, 0.87]  within init 0.38 0.62 0.72 0.91  within underspecified/novel 0.58
+  drift in cm             : AUROC 0.66 [0.53, 0.73]  within init 0.47 0.71 0.67 0.68  within underspecified/novel 0.59
+  drift, whole rollout    : AUROC 0.58 [0.48, 0.71]  within init 0.66 0.83 0.43 0.57  within underspecified/novel 0.59
+  -sep_min                : AUROC 0.46 [0.34, 0.57]  within init 0.57 0.57 0.52 0.30  within underspecified/novel 0.48
+  t0 sigma1 (ridge)       : AUROC 0.63 [0.52, 0.74]  within init 0.48 0.68 0.54 0.76  within underspecified/novel 0.50
+  t0 |lam0 - 1/2|^-1      : AUROC 0.33 [0.23, 0.44]  within init 0.32 0.40 0.44 0.20  within underspecified/novel 0.41
+
+rollout-level, split pairs only: does late lambda (mean of the last 3 replans) say which outcome?
+  init 0 'put the wine bottle in the rack': labels ['bottle->rack', 'none', 'bottle->rack', 'bottle->rack']  lambda_late 0.05 0.18 -0.36 -0.50  |AUROC - 1/2| + 1/2 = 1.00
+  init 0 'put something on the plate': labels ['bowl->plate', 'bowl->plate', 'cheese->plate', 'bowl->plate']  lambda_late 0.77 0.51 0.53 0.43  |AUROC - 1/2| + 1/2 = 0.67
+  init 0 'put the wine bottle on the stove': labels ['bottle->stove', 'none', 'bottle->stove', 'bottle->stove']  lambda_late 0.37 0.27 0.10 0.72  |AUROC - 1/2| + 1/2 = 0.67
+  init 0 'put the cream cheese on the plate': labels ['cheese->plate', 'none', 'cheese->plate', 'cheese->plate']  lambda_late 0.86 -0.19 0.88 1.65  |AUROC - 1/2| + 1/2 = 1.00
+  init 1 'pull out the middle drawer': labels ['bottom drawer open', 'bottom drawer open', 'bottom drawer open', 'middle drawer']  lambda_late 0.67 0.62 2.26 -0.86  |AUROC - 1/2| + 1/2 = 1.00
+  init 1 'open a drawer': labels ['middle drawer', 'middle drawer', 'bottom drawer open', 'middle drawer']  lambda_late -1.38 -0.27 -0.11 -0.12  |AUROC - 1/2| + 1/2 = 1.00
+  init 1 'open the drawer': labels ['middle drawer', 'bottom drawer open', 'bottom drawer open', 'middle drawer']  lambda_late -1.51 -0.10 1.16 0.28  |AUROC - 1/2| + 1/2 = 0.75
+  init 2 'move the bowl': labels ['bowl->stove', 'bowl->stove', 'bowl->plate', 'bowl->stove']  lambda_late 0.17 0.13 0.15 0.06  |AUROC - 1/2| + 1/2 = 0.67
+  init 2 'tidy up the table': labels ['bowl->plate', 'bowl->stove', 'bowl->plate', 'bowl->stove']  lambda_late 0.53 0.39 0.50 0.32  |AUROC - 1/2| + 1/2 = 1.00
+  init 2 'put the wine bottle on the stove': labels ['none', 'bottle->stove', 'bottle->stove', 'none']  lambda_late 0.98 0.96 0.96 1.08  |AUROC - 1/2| + 1/2 = 1.00
+  init 2 'put the cream cheese on the plate': labels ['plate->stove front', 'plate->stove front', 'plate->stove front', 'none']  lambda_late 0.87 -0.19 0.48 0.57  |AUROC - 1/2| + 1/2 = 0.67
+  init 2 'put the cream cheese on the stove': labels ['cheese->stove', 'cheese->bowl', 'cheese->bowl', 'cheese->bowl']  lambda_late -0.09 -0.04 -0.17 -0.62  |AUROC - 1/2| + 1/2 = 0.67
+  init 3 'open a drawer': labels ['bottom drawer open', 'bowl->top drawer', 'bowl->top drawer', 'bowl->top drawer']  lambda_late -0.02 0.47 0.76 0.14  |AUROC - 1/2| + 1/2 = 1.00
+  init 3 'open the drawer': labels ['bowl->top drawer', 'bowl->top drawer', 'middle drawer', 'bowl->top drawer']  lambda_late 0.20 0.27 0.60 -0.52  |AUROC - 1/2| + 1/2 = 1.00
+  init 3 'move the bowl': labels ['bowl->stove', 'bowl->plate', 'bowl->plate', 'bowl->plate']  lambda_late 0.67 -0.55 0.67 0.25  |AUROC - 1/2| + 1/2 = 1.00
+  init 3 'tidy up the table': labels ['none', 'stove on', 'stove on', 'none']  lambda_late 0.82 0.43 0.92 0.97  |AUROC - 1/2| + 1/2 = 0.75
+  init 3 'put the wine bottle on the stove': labels ['none', 'bottle->stove', 'none', 'none']  lambda_late -6.07 -2.12 -4.90 -3.04  |AUROC - 1/2| + 1/2 = 1.00
+  init 3 'put the cream cheese on the plate': labels ['cheese->plate', 'cheese->bowl', 'cheese->plate', 'cheese->bowl']  lambda_late -0.03 0.25 0.56 0.29  |AUROC - 1/2| + 1/2 = 0.50
+  mean over pairs 0.85
+
+lead time, split pairs: first replan where lambda moved >= 0.3 from its t 0 value vs the outcome time
+  init 0 'put the wine bottle in the rack': c+ 'put the wine bottle between the rack' c- 'put casio wine bottle in the rack'  bottle->rack@149 warn@10  none@300 warn@10  bottle->rack@151 warn@30  bottle->rack@148 warn@10
+  init 0 'put something on the plate': c+ 'put bowl on the plate' c- 'put something lyon the plate'  bowl->plate@72 warn@40  bowl->plate@71 warn@40  cheese->plate@226 warn@40  bowl->plate@147 warn@80
+  init 0 'put the wine bottle on the stove': c+ 'put the wine bottle on the frame' c- 'put the wine corsair on the stove'  bottle->stove@164 warn@10  none@300 warn@10  bottle->stove@160 warn@10  bottle->stove@181 warn@10
+  init 0 'put the cream cheese on the plate': c+ 'put the cream cheese on the bowl' c- 'put the cookie cheese on the plate'  cheese->plate@112 warn@60  none@300 warn@40  cheese->plate@102 warn@60  cheese->plate@112 warn@60
+  init 1 'pull out the middle drawer': c+ 'pull out the middle torte' c- 'pull out the middle open'  bottom drawer open@300 warn@10  bottom drawer open@300 warn@10  bottom drawer open@300 warn@10  middle drawer@138 warn@10
+  init 1 'open a drawer': c+ 'middle a drawer' c- 'top a drawer'  middle drawer@131 warn@10  middle drawer@141 warn@10  bottom drawer open@300 warn@10  middle drawer@131 warn@10
+  init 1 'open the drawer': c+ 'middle the drawer' c- 'top the drawer'  middle drawer@130 warn@10  bottom drawer open@300 warn@10  bottom drawer open@300 warn@10  middle drawer@133 warn@10
+  init 2 'move the bowl': c+ 'move the hammer' c- 'put the bowl'  bowl->stove@87 warn@60  bowl->stove@83 warn@-1  bowl->plate@79 warn@-1  bowl->stove@83 warn@60
+  init 2 'tidy up the table': c+ 'tidy up the bosch' c- 'turn up the table'  bowl->plate@89 warn@50  bowl->stove@86 warn@30  bowl->plate@87 warn@40  bowl->stove@87 warn@40
+  init 2 'put the wine bottle on the stove': c+ 'put the the bottle on the stove' c- 'put the wine bottle on the rack'  none@300 warn@10  bottle->stove@156 warn@10  bottle->stove@163 warn@10  none@300 warn@10
+  init 2 'put the cream cheese on the plate': c+ 'put the cream cheese pick the plate' c- 'put the uruguay cheese on the plate'  plate->stove front@266 warn@50  plate->stove front@253 warn@100  plate->stove front@249 warn@50  none@300 warn@50
+  init 2 'put the cream cheese on the stove': c+ 'put the cream stove on the stove' c- 'put roberto cream cheese on the stove'  cheese->stove@137 warn@40  cheese->bowl@80 warn@40  cheese->bowl@81 warn@40  cheese->bowl@87 warn@60
+  init 3 'open a drawer': c+ 'middle a drawer' c- 'open top drawer'  bottom drawer open@300 warn@10  bowl->top drawer@169 warn@10  bowl->top drawer@164 warn@10  bowl->top drawer@227 warn@10
+  init 3 'open the drawer': c+ 'top the drawer' c- 'middle the drawer'  bowl->top drawer@181 warn@10  bowl->top drawer@239 warn@10  middle drawer@127 warn@10  bowl->top drawer@240 warn@10
+  init 3 'move the bowl': c+ 'push the bowl' c- 'move luigi bowl'  bowl->stove@83 warn@50  bowl->plate@76 warn@40  bowl->plate@75 warn@40  bowl->plate@76 warn@40
+  init 3 'tidy up the table': c+ 'turn up the table' c- 'plate up the table'  none@300 warn@40  stove on@99 warn@40  stove on@79 warn@40  none@300 warn@40
+  init 3 'put the wine bottle on the stove': c+ 'put the wine bottle on the cupboard' c- 'put the wine bottle on the cray'  none@300 warn@10  bottle->stove@191 warn@10  none@300 warn@10  none@300 warn@10
+  init 3 'put the cream cheese on the plate': c+ 'put the cream cheese on the bowl' c- 'put the cream pull on the plate'  cheese->plate@107 warn@10  cheese->bowl@78 warn@40  cheese->plate@119 warn@10  cheese->bowl@79 warn@40
+
+decoded prompts (underspecified / novel):
+  init 0 SPLIT 'put the cream cheese on the plate': + 'put the cream cheese on the bowl' / - 'put the cookie cheese on the plate'  drift 1.21  labels ['cheese->plate', 'none']
+  init 1       'put the cream cheese on the plate': + 'put the bowl cheese on the plate' / - 'put the cream cheese on the saar'  drift 0.79  labels ['cheese->plate']
+  init 2 SPLIT 'put the cream cheese on the plate': + 'put the cream cheese pick the plate' / - 'put the uruguay cheese on the plate'  drift 0.75  labels ['none', 'plate->stove front']
+  init 3 SPLIT 'put the cream cheese on the plate': + 'put the cream cheese on the bowl' / - 'put the cream pull on the plate'  drift 0.52  labels ['cheese->bowl', 'cheese->plate']
+  init 0       'put the cream cheese on the stove': + 'put the cream in on the stove' / - 'put the cream cheese on the xxvi'  drift 0.52  labels ['cheese->bowl']
+  init 1       'put the cream cheese on the stove': + 'put the cookie cheese on the stove' / - 'put the cream tass on the stove'  drift 2.32  labels ['cheese->stove']
+  init 2 SPLIT 'put the cream cheese on the stove': + 'put the cream stove on the stove' / - 'put roberto cream cheese on the stove'  drift 1.66  labels ['cheese->bowl', 'cheese->stove']
+  init 3       'put the cream cheese on the stove': + 'put the cream venezuela on the stove' / - 'put the cream cheese on the bess'  drift 1.02  labels ['cheese->stove']
+  init 0 SPLIT 'put the wine bottle on the stove': + 'put the wine bottle on the frame' / - 'put the wine corsair on the stove'  drift 1.51  labels ['bottle->stove', 'none']
+  init 1       'put the wine bottle on the stove': + 'put the sovereigns bottle on the stove' / - 'put the wine bottle on gild stove'  drift 0.76  labels ['none']
+  init 2 SPLIT 'put the wine bottle on the stove': + 'put the the bottle on the stove' / - 'put the wine bottle on the rack'  drift 0.79  labels ['bottle->stove', 'none']
+  init 3 SPLIT 'put the wine bottle on the stove': + 'put the wine bottle on the cupboard' / - 'put the wine bottle on the cray'  drift 14.91  labels ['bottle->stove', 'none']
+  init 0       'move the bowl': + 'move cracker bowl' / - 'move the uruguay'  drift 11.09  labels ['bowl->plate']
+  init 1       'move the bowl': + 'move the franz' / - 'mimi the bowl'  drift 4.34  labels ['bowl->stove']
+  init 2 SPLIT 'move the bowl': + 'move the hammer' / - 'put the bowl'  drift 0.67  labels ['bowl->plate', 'bowl->stove']
+  init 3 SPLIT 'move the bowl': + 'push the bowl' / - 'move luigi bowl'  drift 4.30  labels ['bowl->plate', 'bowl->stove']
+  init 0       'move the wine bottle': + 'roberto the wine bottle' / - 'drawer the wine bottle'  drift 0.94  labels ['bottle->rack']
+  init 1       'move the wine bottle': + 'move the ladle bottle' / - 'open the wine bottle'  drift 0.68  labels ['bottle->rack']
+  init 2       'move the wine bottle': + 'drops the wine bottle' / - 'move the edge bottle'  drift 1.05  labels ['bottle->rack']
+  init 3       'move the wine bottle': + 'move the wine pei' / - 'move the valentino bottle'  drift 0.76  labels ['bottle->rack']
+  init 0       'open a drawer': + 'middle a drawer' / - 'open top drawer'  drift 1.13  labels ['middle drawer']
+  init 1 SPLIT 'open a drawer': + 'middle a drawer' / - 'top a drawer'  drift 1.01  labels ['bottom drawer open', 'middle drawer']
+  init 2       'open a drawer': + 'top a drawer' / - 'middle a drawer'  drift 0.51  labels ['middle drawer']
+  init 3 SPLIT 'open a drawer': + 'middle a drawer' / - 'open top drawer'  drift 0.69  labels ['bottom drawer open', 'bowl->top drawer']
+  init 0       'open the drawer': + 'open top drawer' / - 'middle the drawer'  drift 0.96  labels ['middle drawer']
+  init 1 SPLIT 'open the drawer': + 'middle the drawer' / - 'top the drawer'  drift 0.90  labels ['bottom drawer open', 'middle drawer']
+  init 2       'open the drawer': + 'top the drawer' / - 'middle the drawer'  drift 0.44  labels ['middle drawer']
+  init 3 SPLIT 'open the drawer': + 'top the drawer' / - 'middle the drawer'  drift 0.65  labels ['bowl->top drawer', 'middle drawer']
+  init 0 SPLIT 'put something on the plate': + 'put bowl on the plate' / - 'put something lyon the plate'  drift 0.94  labels ['bowl->plate', 'cheese->plate']
+  init 1       'put something on the plate': + 'put faa on the plate' / - 'put it on the plate'  drift 0.74  labels ['bowl->plate']
+  init 2       'put something on the plate': + 'put something on the uruguay' / - 'open something on the plate'  drift 0.91  labels ['bowl->plate']
+  init 3       'put something on the plate': + 'put an on the plate' / - 'put frankfurt on the plate'  drift 1.02  labels ['bowl->plate']
+  init 0       'put something on the stove': + 'peel something on the stove' / - 'put something on the bonbons'  drift 0.96  labels ['stove on']
+  init 1       'put something on the stove': + 'put something on the xxii' / - 'mode something on the stove'  drift 0.30  labels ['stove on']
+  init 2       'put something on the stove': + 'put something sergio the stove' / - 'tidy something on the stove'  drift 0.89  labels ['stove on']
+  init 3       'put something on the stove': + 'bowls something on the stove' / - 'filtrate something on the stove'  drift 1.59  labels ['stove on']
+  init 0       'put something on top of the cabinet': + 'cam something on top of the cabinet' / - 'put something javier top of the cabinet'  drift 0.99  labels ['bowl->cabinet top']
+  init 1       'put something on top of the cabinet': + 'put it on top of the cabinet' / - 'put anton on top of the cabinet'  drift 0.40  labels ['bowl->cabinet top']
+  init 2       'put something on top of the cabinet': + 'put something wald top of the cabinet' / - 'put something on away of the cabinet'  drift 0.93  labels ['bottle->cabinet top']
+  init 3       'put something on top of the cabinet': + 'open something on top of the cabinet' / - 'put minn on top of the cabinet'  drift 2.14  labels ['bowl->cabinet top']
+  init 0       'put the bowl on the cabinet': + 'put the javier on the cabinet' / - 'put the bowl on the lip'  drift 1.33  labels ['bowl->cabinet top']
+  init 1       'put the bowl on the cabinet': + 'put the casserole on the cabinet' / - 'put the bowl on the tidy'  drift 1.62  labels ['bowl->cabinet top']
+  init 2       'put the bowl on the cabinet': + 'put the bowl on the cookie' / - 'put the ecru on the cabinet'  drift 0.90  labels ['bowl->cabinet top']
+  init 3       'put the bowl on the cabinet': + 'put the slotted on the cabinet' / - 'put the bowl on the nicolas'  drift 1.18  labels ['bowl->cabinet top']
+  init 0       'put the bowl somewhere': + 'put the bowl the' / - 'put hasbro bowl somewhere'  drift 1.41  labels ['bowl->stove']
+  init 1       'put the bowl somewhere': + 'put the on somewhere' / - 'put the bowl tolerably'  drift 1.09  labels ['bowl->stove']
+  init 2       'put the bowl somewhere': + 'put the bowl nicolas' / - 'put the sealing somewhere'  drift 0.81  labels ['bowl->stove']
+  init 3       'put the bowl somewhere': + 'put the bowl lamborghini' / - 'break the bowl somewhere'  drift 1.57  labels ['bowl->stove']
+  init 0       'put the wine bottle somewhere': + 'put the wine bottle tupperware' / - 'put the carmen bottle somewhere'  drift 0.56  labels ['bottle->rack']
+  init 1       'put the wine bottle somewhere': + 'put the danish bottle somewhere' / - 'put the wine bottle rack'  drift 2.62  labels ['bottle->rack']
+  init 2       'put the wine bottle somewhere': + 'put the wine bottle rack' / - 'put the store bottle somewhere'  drift 1.79  labels ['bottle->rack']
+  init 3       'put the wine bottle somewhere': + 'put the put bottle somewhere' / - 'put the wine cannes somewhere'  drift 0.82  labels ['bottle->rack']
+  init 0       'tidy up the table': + 'put up the table' / - 'tidy up move table'  drift 0.92  labels ['bowl->plate']
+  init 1       'tidy up the table': + 'tidy up the idyl' / - 'tidy up the bowl'  drift 1.59  labels ['bowl->stove']
+  init 2 SPLIT 'tidy up the table': + 'tidy up the bosch' / - 'turn up the table'  drift 1.37  labels ['bowl->plate', 'bowl->stove']
+  init 3 SPLIT 'tidy up the table': + 'turn up the table' / - 'plate up the table'  drift 0.59  labels ['none', 'stove on']
