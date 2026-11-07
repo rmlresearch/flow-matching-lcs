@@ -23,3 +23,11 @@ robot5/out/goal_screen.npz
 
 # PushT (robot6/): migrated SmolVLA checkpoint (935 MB; see robot6/README.md)
 robot6/policies/
+
+# real SO-101 (robot7/): run logs with frames, and the frame grabbed by the last check
+robot7/runs/
+robot7/out/last_frame.jpg
+robot7/out/status_frame.jpg
+robot7/out/*.log
+robot7/out/thor_logs/
+robot7/__pycache__/
