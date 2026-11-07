@@ -31,3 +31,4 @@ robot7/out/status_frame.jpg
 robot7/out/*.log
 robot7/out/thor_logs/
 robot7/__pycache__/
+!robot7/runs/20261107_083621_views/
